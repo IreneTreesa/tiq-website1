@@ -1,7 +1,7 @@
 <script>
-	import Menu from './Menu.svelte';
+	
 	import { page } from '$app/stores';
-
+import { Instagram, Linkedin } from 'lucide-svelte';
 	
 
 	let scrollRef;
@@ -17,16 +17,22 @@
 	}
 </script>
 
-<!-- Replace old navbar with this -->
-<Menu />
+
 
 <!-- Dark blue bg-->
-<div class="flex flex-col relative bg-gradient-to-tr from-[#101a2a] via-[#101a2a] to-[#101a2a] pb-24">
+<div
+	class="relative
+	min-h-[calc(100vh-80px)]
+	bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a]
+	overflow-hidden flex"
+>
 
 	<!-- About TIQ -->
-	<div class="flex flex-col lg:flex-row items-center mt-16 px-4 sm:px-10 lg:mx-20 gap-10">
-		<div class="flex flex-col flex-1">
-			<h1 class="text-4xl sm:text-5xl lg:text-6xl font-[merriweather] text-[#70B5F4]">About TIQ</h1>
+	<div class="flex flex-col lg:flex-row items-center mt-1 px-4 sm:px-10 lg:mx-20 gap-10">
+		<div class="order-2 lg:order-1 flex flex-col flex-1">
+			<h1 class="text-center lg:text-left text-4xl sm:text-5xl lg:text-6xl font-[merriweather] text-[#70B5F4] -mt-12">
+    About TIQ
+</h1>
 			<p class="mt-6 text-sm sm:text-base leading-relaxed font-light text-white pr-0 sm:pr-10">
 				The Illuminati Quiz (TIQ), the annual inter collegiate quiz competition organised by Govt.
 				Model Engineering College is one of the largest student organised Quiz in South India. Held
@@ -42,7 +48,7 @@
 			</p>
 		</div>
 		<img 
-  class="w-40 sm:w-52 lg:w-96 mx-auto lg:mx-0 mt-6 lg:mt-0 mb-12 lg:mb-0"
+  class="order-1 lg:order-2 w-40 sm:w-52 lg:w-96 mx-auto lg:mx-0 mt-6 lg:mt-0 mb-12 lg:mb-0"
   src="/media/tiq_lightblue.png" 
   alt="tiqlogo" 
 />
@@ -88,50 +94,33 @@
 </div>
 
 <!-- Govt Model Engineering College -->
-<div class="relative bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a]
-            px-4 sm:px-10 lg:px-20
-            py-16 lg:py-24">
+<div class="relative bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a] px-6 sm:px-12 lg:px-24 py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+    
+    <div class="flex flex-col sm:flex-row lg:flex-col items-center lg:items-start gap-6 text-center sm:text-left">
+      <img src="/media/college.png" alt="college" class="w-40 sm:w-48 lg:w-72 h-auto" />
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl text-[#70B5F4] font-light font-[merriweather] leading-tight">
+        Govt. Model <br class="hidden lg:block"/>Engineering College
+      </h1>
+    </div>
 
-  <!-- Header -->
-  <div class="flex flex-col lg:flex-row items-center gap-8 mb-12">
-    <img
-      src="/media/college.png"
-      alt="college"
-      class="w-48 sm:w-64 lg:w-[26rem] mx-auto lg:mx-0 h-auto"
-    />
-
-    <h1 class="text-3xl sm:text-4xl lg:text-6xl
-               text-[#70B5F4]
-               font-light font-[merriweather]
-               text-center lg:text-left">
-      Govt. Model <br />Engineering College
-    </h1>
-  </div>
-
-  <!-- Two-column content (SYMMETRICAL) -->
-  <div class="max-w-6xl mx-auto
-              flex flex-col lg:flex-row
-              gap-10
-              font-light text-white leading-relaxed">
-
-    <!-- LEFT PARAGRAPH -->
-    <p class="flex-1">
-      Govt. Model Engineering College, Kochi, is a premier institute of engineering
-      education in Kerala. More than just another engineering college, MEC nurtures
-      a diverse community of budding innovators and entrepreneurs, making it one of
-      the most sought-after destinations for students and recruiters alike. This
-      reputation is reflected in its ranking as the 27th best engineering institute
-      in the country.
-    </p>
-
-    <!-- RIGHT PARAGRAPH -->
-    <p class="flex-1">
-      Illuminati, the quizzing fraternity of Govt. Model Engineering College, Kochi,
-      is among the most active student societies in the campus. Founded by the late
-      Sandeep Menon, it has conducted over a hundred intra- and inter-collegiate
-      quizzes and organises the weekly TGIX quiz, bringing together avid quizzers
-      to compete in a true battle of wits.
-    </p>
+    <div class="flex flex-col gap-6 text-sm sm:text-base font-light text-slate-300 leading-relaxed">
+      <p>
+        Govt. Model Engineering College, Kochi, is a premier institute of engineering
+        education in Kerala. More than just another engineering college, MEC nurtures
+        a diverse community of budding innovators and entrepreneurs, making it one of
+        the most sought-after destinations for students and recruiters alike. This
+        reputation is reflected in its ranking as the 27th best engineering institute
+        in the country.
+      </p>
+      <p class="border-t border-slate-8xl pt-6 border-[#70B5F4]/20">
+        Illuminati, the quizzing fraternity of Govt. Model Engineering College, Kochi,
+        is among the most active student societies in the campus. Founded by the late
+        Sandeep Menon, it has conducted over a hundred intra- and inter-collegiate
+        quizzes and organises the weekly TGIX quiz, bringing together avid quizzers
+        to compete in a true battle of wits.
+      </p>
+    </div>
 
   </div>
 </div>
@@ -158,7 +147,7 @@
   <!-- Text -->
   <div class="flex flex-col lg:ml-12 text-center lg:text-left max-w-3xl">
     <p class="text-sm uppercase tracking-widest text-[#143253] font-[merriweather] mb-2">
-  Official Supporting Foundation
+  our pillar of support
 </p>
 
 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-[merriweather] text-[#020913] font-normal">
@@ -180,14 +169,168 @@
   and opportunity for marginalised communities.
 </p>
 
-
-    <a
-      href="https://www.sandeepmenon.net"
+<div class="mt-10 flex justify-center"> 
+			
+			<a href="https://www.sandeepmenon.net"
       target="_blank"
-      rel="noopener noreferrer"
-      class="mt-6 inline-block text-sm sm:text-base font-[merriweather]
-             text-[#020913] underline hover:text-[#143253] transition">
-      Learn more about the Foundation
-    </a>
+      rel="noopener noreferrer" class="inline-flex items-center 
+			justify-center px-6 py-3 
+			bg-[#020913]/10
+			border border-[#020913] text-[#020913] rounded-full 
+			hover:bg-[#70B5F4] hover:text-[#020912] transition" > 
+			Learn More </a> 
+		</div>
+    
   </div>
+</div>
+
+<!-- CONTACT SECTION -->
+<div
+	class="bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a]
+	px-6 sm:px-10 lg:px-24
+	py-24"
+>
+
+	<div
+		class="max-w-6xl mx-auto
+		flex flex-col lg:flex-row
+		gap-16 items-center lg:items-start"
+	>
+
+		<!-- LEFT -->
+		<div class="flex-1 text-center lg:text-left">
+
+			<p
+				class="uppercase tracking-[0.3em]
+				text-sm text-[#D4AF37]
+				mb-4"
+			>
+				Get in Touch
+			</p>
+
+			<h1
+				class="text-5xl lg:text-6xl
+				font-[merriweather]
+				text-[#70B5F4]
+				leading-tight"
+			>
+				Contact Us
+			</h1>
+
+			<p
+				class="mt-8 text-[#F5F1E8]/80
+				leading-relaxed
+				max-w-xl"
+			>
+				For updates, announcements and event-related information,
+				connect with The Illuminati Quiz through our official
+				social platforms.
+			</p>
+
+			
+		</div>
+
+		<!-- RIGHT -->
+		<div class="flex flex-col gap-8 text-center lg:text-left w-full lg:w-auto">
+
+			<a
+				href="https://www.linkedin.com/company/illuminati-quiz-club/"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="group"
+			>
+
+				<p
+					class="text-sm uppercase tracking-[0.25em]
+					text-[#D4AF37] mb-2"
+				>
+					LinkedIn
+				</p>
+
+				<h2
+					class="text-2xl text-[#F5F1E8]
+					group-hover:text-[#70B5F4]
+					transition"
+				>
+					The Illuminati Quiz Club
+				</h2>
+
+			</a>
+
+			<a
+				href="https://www.instagram.com/mec_illuminati?igsh=MW9pZHNycTNxdjhybQ=="
+				target="_blank"
+				rel="noopener noreferrer"
+				class="group"
+			>
+
+				<p
+					class="text-sm uppercase tracking-[0.25em]
+					text-[#D4AF37] mb-2"
+				>
+					Instagram
+				</p>
+
+				<h2
+					class="text-2xl text-[#F5F1E8]
+					group-hover:text-[#70B5F4]
+					transition"
+				>
+					@mec_illuminati
+				</h2>
+
+			</a>
+
+			<a
+				href="https://x.com/IlluminatiQuiz"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="group"
+			>
+
+				<p
+					class="text-sm uppercase tracking-[0.25em]
+					text-[#D4AF37] mb-2"
+				>
+					Twitter
+				</p>
+
+				<h2
+					class="text-2xl text-[#F5F1E8]
+					group-hover:text-[#70B5F4]
+					transition"
+				>
+					IlluminatiQuiz
+				</h2>
+
+			</a>
+
+			<a
+				href="mailto:illuminatiquiz@gmail.com"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="group"
+			>
+
+				<p
+					class="text-sm uppercase tracking-[0.25em]
+					text-[#D4AF37] mb-2"
+				>
+					Email
+				</p>
+
+				<h2
+					class="text-2xl text-[#F5F1E8]
+					group-hover:text-[#70B5F4]
+					transition"
+				>
+					illuminatiquiz@gmail.com
+				</h2>
+
+			</a>
+
+		</div>
+
+	</div>
+
 </div>

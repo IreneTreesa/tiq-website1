@@ -1,10 +1,14 @@
 <script>
-	
-    
+	import Menu from '../components/Menu.svelte';
+	import Footer from '../components/footer.svelte';
+	import '../app.css';
+
 	let { children } = $props();
-	import Footer from '/src/components/footer.svelte';
-	 import '../app.css';
 </script>
 
-{@render children()}
-<Footer/>
+<Menu />
+
+<main >	{@render children()}
+</main>
+
+<Footer />

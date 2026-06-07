@@ -1,11 +1,10 @@
 <script>
   
   import { Instagram, Linkedin } from 'lucide-svelte';
-	import Menu from './Menu.svelte';
+	
  
 </script>
 
-<Menu/>
 
 <!-- CONTACT CARD -->
 <div class="h-screen w-full relative flex flex-col">

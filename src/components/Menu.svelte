@@ -1,84 +1,105 @@
 <script>
-    import { page } from '$app/stores';
-let tabs = [
-    { name: 'About Us', link: '/about' },
-    { name: 'Contact Us', link: '/contact' },
-    { name: 'Gallery', link: '/gallery' },
-    { name: 'Register', link: '/register' }
-  ];
+	import { page } from '$app/stores';
 
-  let showMenu = $state(false);
-  function toggleMenu() {
-    showMenu = !showMenu;
-  }
+	let tabs = [
+		{ name: 'Home', link: '/' },
+		{ name: 'About', link: '/about' },
+		{ name: 'Gallery', link: '/gallery' },
+		{ name: 'Archive', link: '/archive' },
+		{ name: 'Team', link: '/team' }
+	];
+
+	let showMenu = false;
+
+	function toggleMenu() {
+		showMenu = !showMenu;
+
+		// prevent background scroll
+		document.body.style.overflow = showMenu ? 'hidden' : 'auto';
+	}
 </script>
-<!--#101a2a #020912 #101a2a-->
-<!-- NAVBAR WRAPPER -->
-<div class="bg-gradient-to-tr from-[#101a2a] via-[#101a2a] to-[#101a2a]">
-	
-	<header class="flex items-center justify-between px-4 sm:px-6 lg:px-12 py-3 relative">
 
-		<!-- Logo -->
-		<a href="/" class="flex-shrink-0">
-			<img class="w-16 sm:w-20 h-auto" src="/favicon.svg" alt="tiq" />
+<header
+	class="top-0 w-full z-50
+	bg-[#0b1320]"
+>
+	<div
+	class="max-w-7xl mx-auto flex items-center justify-between
+	px-5 md:px-8 py-5
+	border-b border-white/10"
+>
+		<!-- LOGO -->
+		<a href="/" class="z-50">
+			<img
+				src="/favicon.svg"
+				alt="TIQ"
+				class="w-14 md:w-16 h-auto"
+			/>
 		</a>
 
-		<!-- DESKTOP NAV 
-		<nav class="hidden md:flex ml-auto gap-6 text-lg">
+		<!-- DESKTOP NAV -->
+		<nav class="hidden md:flex items-center gap-10">
 			{#each tabs as tab}
 				<a
 					href={tab.link}
-					class="text-[#F8F3E2] px-4 py-1 font-light 
-					{$page.url.pathname === tab.link ? 'underline underline-offset-4 font-extrabold' : ''}
-					hover:text-[#70B5F4] transition"
+					class={`relative text-sm uppercase tracking-[0.2em]
+					transition-all duration-300
+
+					${
+						$page.url.pathname === tab.link
+							? 'text-[#D4AF37]'
+							: 'text-white/80 hover:text-[#4FD1FF]'
+					}`}
 				>
 					{tab.name}
+
+					{#if $page.url.pathname === tab.link}
+						<span
+							class="absolute left-0 -bottom-2 w-full h-[1px]
+							bg-[#D4AF37]"
+						/>
+					{/if}
 				</a>
 			{/each}
-		</nav> -->
-		<nav class="hidden md:flex ml-auto gap-6 text-lg items-center">
-  {#each tabs as tab}
-    <a
-      href={tab.link}
-      class={`px-4 py-1 font-[merriweather] transition
-        ${$page.url.pathname === tab.link ? ' font-[merriweather]' : ''}
-        ${tab.name === 'Register'
-          ? 'bg-[#A9D1F7] text-[#0b1320] rounded-lg px-5 py-2 font-semibold hover:bg-[#8fc0f0]'
-          : 'text-[#F8F3E2] hover:text-[#70B5F4]'
-        }
-      `}
-    >
-      {tab.name}
-    </a>
-  {/each}
-</nav>
+		</nav>
 
-
-		<!-- MOBILE HAMBURGER -->
-		<button 
-			class="md:hidden ml-auto text-[#F8F3E2] text-3xl"
+		<!-- MOBILE BUTTON -->
+		<button
+			class="md:hidden z-50 text-white text-3xl"
 			on:click={toggleMenu}
+			aria-label="Toggle Menu"
 		>
-			{showMenu ? "✕" : "☰"}
+			{showMenu ? '✕' : '☰'}
 		</button>
+	</div>
 
-		<!-- MOBILE MENU -->
-		{#if showMenu}
-			<div class="absolute top-full left-0 w-full bg-[#0b1320] border-t border-[#1a2a40] md:hidden shadow-lg z-20">
-				<div class="flex flex-col p-4">
-					{#each tabs as tab}
-						<a
-							href={tab.link}
-							class="text-[#F8F3E2] py-2 px-1 text-lg border-b border-[#1a2a40] 
-							hover:text-[#70B5F4] transition"
-							on:click={toggleMenu}
-						>
-							{tab.name}
-						</a>
-					{/each}
-				</div>
-			</div>
-		{/if}
+	<!-- FULLSCREEN MOBILE MENU -->
+	{#if showMenu}
+		<div
+			class="fixed inset-0 z-[100] bg-[#05070B]
+			flex flex-col justify-center items-center
+			md:hidden"
+		>
+			<nav class="flex flex-col items-center gap-8">
+				{#each tabs as tab}
+					<a
+						href={tab.link}
+						on:click={toggleMenu}
+						class={`text-3xl uppercase tracking-[0.15em]
+						transition-all duration-300
 
-	</header>
-</div>
+						${
+							$page.url.pathname === tab.link
+								? 'text-[#D4AF37]'
+								: 'text-white hover:text-[#4FD1FF]'
+						}`}
+					>
+						{tab.name}
+					</a>
+				{/each}
+			</nav>
+
+			
+		</div>
+	{/if}
+</header>

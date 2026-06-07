@@ -3,203 +3,285 @@
 	import Footer from "./footer.svelte";
 	import Sponsors from "./sponsors.svelte";
 
-	let showMobileMenu = false;
-
 	
-	let tabs = [
-		{ name: 'About Us', link: '/about' },
-		{ name: 'Contact Us', link: '/contact' },
-		{ name: 'Gallery', link: '/gallery' },
-		{ name: 'Register', link: '/register' }
-	];
 </script>
 <!--#0b1320. #101a2a-->
 <div class="flex flex-col relative bg-gradient-to-tr from-[#101a2a] via-[#101a2a] to-[#101a2a]">
 
-<header class="flex items-center justify-between px-4 md:px-10 py-4 bg-[#101a2a]">
 
-  <!-- Logo -->
-  <img class="w-20 h-20" src="/favicon.svg" alt="tiq" />
-
-  <!-- Desktop Nav -->
-  <nav class="hidden md:flex items-center space-x-6 text-[#F8F3E2] font-[merriweather] font-light text-lg tracking-wide">
-    {#each tabs as tab}
-      <a
-        href={tab.link}
-        class={tab.name === 'Register'
-          ? 'bg-[#A9D1F7] text-[#020912] px-5 py-2 rounded-lg font-semibold hover:bg-[#8fc0f0]'
-          : 'hover:text-[#70B5F4]'
-        }
-      >
-        {tab.name}
-      </a>
-    {/each}
-  </nav>
-
-  <!-- Mobile Hamburger -->
-  <button class="md:hidden" on:click={() => showMobileMenu = !showMobileMenu}>
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#F8F3E2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d={showMobileMenu ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
-    </svg>
-  </button>
-
-</header>
-
-
-<!-- Mobile Menu -->
-{#if showMobileMenu}
-  <div class="md:hidden flex flex-col bg-[#020912] font-[merriweather] text-[#F8F3E2] p-4 space-y-4">
-    {#each tabs as tab}
-      <a href={tab.link} class="hover:text-[#70B5F4]" on:click={() => showMobileMenu = false}>{tab.name}</a>
-    {/each}
-  </div>
-{/if}
 
 
 	
 
+
+
+<!-- HERO SECTION -->
 <div
-  class="relative overflow-hidden flex flex-col lg:flex-row
-         min-h-[80vh] lg:min-h-[85vh]
-items-start lg:items-center
- justify-center lg:justify-between
-         pt-6 md:pt-10 lg:pt-12">
-
-
-  
-<div class="flex flex-col flex-1 px-6 md:px-16 text-center lg:text-left my-10">
-
-  <!-- Sponsor -->
-  <p class="text-[#AACCCE] font-[merriweather] uppercase tracking-widest text-sm mb-2">
-    ANSYS presents
-  </p>
-
-  
-  <h1
-  class="font-[merriweather]
-         text-[#4F8FCC] sm:text-[#70B5F4]
-         text-5xl sm:text-6xl lg:text-7xl
-         leading-tight
-         text-center lg:text-left"
+	class="relative
+	min-h-[calc(100vh-64px)]
+	bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a]
+	overflow-hidden flex"
 >
-  THE<br />
-  ILLUMINATI QUIZ<br />
-  2025
-</h1>
+	<div
+	class="w-full pl-6 pr-6 lg:pl-25 lg:pr-16
+	grid lg:grid-cols-2 gap-12
+	pt-12 pb-12 lg:py-20"
+>
 
+		<div class="z-10 text-center lg:text-left lg:max-w-xl">
 
-  <!-- Edition -->
-  <p class="mt-2 text-lg sm:text-2xl text-[#70B5F4] font-[merriweather]">
-    18th Edition
-  </p>
+	<!-- ANSYS -->
+	<div class="mb-6">
 
-  <!-- Memorial -->
-  <p class="mt-2 italic text-[#AACCCE] font-[merriweather]">
-    In memory of Sandeep Menon
-  </p>
+		<p class="text-[#F5F1E8]/70 text-s md:text-base tracking-wide mb-1">
+			Presented by
+		</p>
 
-  <!-- Date & Venue -->
-  <div class="mt-4 flex flex-col sm:flex-row
-              items-center justify-center lg:justify-start
-              gap-4 text-[#70B5F4]">
+		<h2
+			class="mt-1
+			text-[#F5F1E8]
+			text-2xl md:text-4xl lg:text-3xl
+			font-semibold tracking-[0.08em]"
+		>
+			ANSYS
+		</h2>
 
-    <div class="flex items-center gap-2">
-      <!-- calendar icon -->
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
-        viewBox="0 0 24 24">
-        <rect x="3" y="4" width="18" height="18" rx="2"></rect>
-        <line x1="16" y1="2" x2="16" y2="6"></line>
-        <line x1="8" y1="2" x2="8" y2="6"></line>
-        <line x1="3" y1="10" x2="21" y2="10"></line>
-      </svg>
-      <span>3 Jan 2026</span>
-    </div>
+	</div>
 
-    <div class="flex items-center gap-2">
-      <!-- location icon -->
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
-        viewBox="0 0 24 24">
-        <path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"></path>
-        <circle cx="12" cy="10" r="3"></circle>
-      </svg>
-      <span>IMA House, Cochin</span>
-    </div>
-  </div>
+	<!-- SMF -->
+	<div class="mb-10">
 
-  <!-- CTA -->
-  <a
-    href="/register"
-    class="mt-6 px-7 py-3 bg-[#70B5F4] rounded-full text-xl
-           inline-flex w-fit font-[merriweather] self-center lg:self-start
-           hover:bg-white transition"
-  >
-    Register Now
-  </a>
+		<p
+			class="text-[#F5F1E8]/70
+			text-sm md:text-base
+			tracking-wide text-s"
+		>
+			In collaboration with
+		</p>
+
+		<h3
+			class="mt-1
+			text-[#F5F1E8]
+			text-2xl md:text-3xl lg:text-3xl
+			font-semibold"
+		>
+			Sandeep Menon Foundation
+		</h3>
+
+	</div>
+
+	<!-- MAIN TITLE (slightly tighter on mobile) -->
+	<h1
+		class="font-[merriweather]
+		text-[#70B5F4]
+		text-7xl sm:text-6xl md:text-7xl lg:text-8xl
+		leading-[0.95]"
+	>
+		THE <br />
+		ILLUMINATI <br />
+		QUIZ
+	</h1>
+
+	<!-- MEMORIAL -->
+	<p
+		class="mt-6 sm:mt-8
+		text-[#D4AF37]
+		text-2xl sm:text-3xl md:text-4xl
+		font-['EB_Garamond']
+		italic"
+	>
+		In memory of Sandeep Menon
+	</p>
 
 </div>
 
-  
+		
 
+	</div>
 
-  <!-- DESKTOP ONLY (UNCHANGED) -->
-  <img
-    src="/media/pic1.png"
-    class="hidden lg:block absolute -top-[72px] right-0 h-[60vh] rounded-b-[3rem]"
-  />
-
-  <img
-    src="/media/pic2.png"
-    class="hidden lg:block absolute -bottom-[72px] right-[22%] h-[50vh] rounded-t-[3rem]"
-  />
+	<div class="hidden lg:block absolute right-0 top-0 bottom-0 w-[45%]">
+		<img
+			src="/media/pic1 (1).png"
+			alt="TIQ Hero"
+			class="absolute top-0 right-35 h-[55vh] object-cover rounded-b-[3rem] shadow-2xl "
+		/>
+		<img
+			src="/media/2pic2.png"
+			alt="TIQ Crowd"
+			class="absolute bottom-0 right-[60%] h-[42vh] object-cover rounded-t-[3rem] shadow-2xl"
+		/>
+	</div>
 
 </div>
+
 
  
 
 <!-- Event Info Sections with Light Blue Background -->
-<div class="flex flex-col gap-16 px-4 md:px-20 py-10 bg-[#A9D1F7]">
+<div class="flex flex-col gap-24 md:gap-16 px-4 md:px-20 py-16 md:py-10 bg-[#A9D1F7]">
 	
 	<!-- Get ready for the Largest Quiz -->
-	<div class="flex flex-col lg:flex-row items-center gap-10">
-		<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic3.png" alt="Frame49" />
-		<div class="flex flex-col lg:w-1/2">
-			<h1 class="text-4xl md:text-5xl lg:text-6xl font-[merriweather] text-[#020913]">
+	
+<div class="flex flex-col-reverse lg:flex-row items-center gap-10 md:ml-20">
+	<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic3.png" alt="Frame49" />
+	<div class="flex flex-col lg:w-1/2">
+			<h1 class="text-4xl md:text-5xl lg:text-6xl font-[merriweather] text-[#020913] text-center lg:text-left">
 				Get ready for the Largest Quiz in South India
 			</h1>
-			<p class="mt-4 text-base md:text-lg font-light text-[#020913]">
+			<p class="hidden md:block mt-4 text-base md:text-lg font-light text-[#020913]">
 				With over 400 participants, including students from IIMs and IITs, attendees come not only for the prize money but also for the convivial quizzing experience.
 			</p>
 		</div>
 	</div>
 
 	<!-- Cash Pool Section -->
-	<div class="flex flex-col lg:flex-row items-center gap-10">
-		<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic4.png" alt="Frame48" />
-		<div class="flex flex-col lg:w-1/2">
-			<h1 class="text-4xl md:text-5xl lg:text-6xl font-[merriweather] text-[#020913]">
+	<div class="flex flex-col lg:flex-row items-center gap-10 md:ml-20">
+		<div class="flex flex-col lg:w-1/2 md:ml-20">
+			<h1 class="text-4xl md:text-5xl lg:text-6xl font-[merriweather] text-[#020913] text-center lg:text-left">
 				With a Cash Pool totaling over ₹55,000
 			</h1>
-			<p class="mt-4 text-base md:text-lg font-light text-[#020913]">
+			<p class="hidden md:block mt-4 text-base md:text-lg font-light text-[#020913]">
 				Cause nothing’s fun without proper incentive. Special thanks to our sponsors, primarily <b class="font-semibold">Ansys</b>
+			</p>
+		</div>
+		<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic4.png" alt="Frame47" />
+	</div>
+
+	<!-- Hosted by Section -->
+
+<div class="flex flex-col-reverse lg:flex-row items-center gap-10 md:ml-20">
+	<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic5.png" alt="Frame48" />
+	<div class="flex flex-col lg:w-1/2">
+			<h1 class="text-4xl md:text-5xl lg:text-6xl font-[merriweather] text-[#020913] text-center lg:text-left">
+				Hosted by Major Chandrakanth Nair
+			</h1>
+			<p class="hidden md:block mt-4 text-base md:text-lg font-light text-[#020913]">
+				One of India’s finest Quiz Masters, Major Chandrakanth Nair is here to give you that premium quizzing experience we know him for!
 			</p>
 			
 		</div>
 	</div>
 
-	<!-- Hosted by Section -->
-	<div class="flex flex-col lg:flex-row items-center gap-10">
-		<div class="flex flex-col lg:w-1/2">
-			<h1 class="text-4xl md:text-5xl lg:text-6xl font-[merriweather] text-[#020913]">
-				Hosted by Major Chandrakanth Nair
-			</h1>
-			<p class="mt-4 text-base md:text-lg font-light text-[#020913]">
-				One of India’s finest Quiz Masters, Major Chandrakanth Nair is here to give you that premium quizzing experience we know him for!
-			</p>
-		</div>
-		<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic5.png" alt="Frame47" />
-	</div>
+	
+
 </div>
+
+
+
+<!-- 2025 EDITION SECTION -->
+<div
+	class="bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a]
+	py-28 px-6 lg:px-20 overflow-hidden"
+>
+
+	<div
+		class="max-w-7xl mx-auto
+		grid lg:grid-cols-2 gap-20 items-center"
+	>
+
+		
+		<!-- LEFT : CONTENT -->
+<div class="order-2 lg:order-1">
+
+	<div class="mb-6 flex justify-center lg:justify-start">
+
+	<span
+		class="inline-flex items-center justify-center
+
+		px-6 py-2
+
+		border border-[#D4AF37]
+		text-[#D4AF37]
+
+		text-lg
+		font-semibold
+
+		tracking-[0.3em]
+		uppercase
+
+		rounded-full
+
+		shadow-[0_0_20px_rgba(212,175,55,0.15)]"
+	>
+		18th Edition
+	</span>
+
+</div>
+
+	<h2
+		class="text-center lg:text-left text-[#70B5F4]
+		font-[merriweather]
+		text-5xl md:text-6xl
+		leading-tight"
+	>
+		The Illuminati Quiz
+	</h2>
+
+	<p
+		class="text-center lg:text-left mt-6
+		text-[#F5F1E8]/80
+		text-lg leading-relaxed
+		font-['Figtree']"
+	>
+		TIQ returns as Kerala’s premier collegiate quiz experience,
+		bringing together top quizzers from across the country
+		for a fast-paced battle of intellect, memory, and speed.
+	</p>
+
+	<div class="mt-10 space-y-4 max-w-xs mx-auto lg:max-w-none">
+
+		<div class="flex items-center gap-3 text-[#F5F1E8]/80 font-['Figtree']">
+			<span class="text-[#70B5F4] font-semibold w-24">Date</span>
+			<span class="text-[#F5F1E8]/40">•</span>
+			<span class="text-[#F5F1E8]">3 January 2026</span>
+		</div>
+
+		<div class="flex items-center gap-3 text-[#F5F1E8]/80 font-['Figtree']">
+			<span class="text-[#70B5F4] font-semibold w-24">Venue</span>
+			<span class="text-[#F5F1E8]/40">•</span>
+			<span class="text-[#F5F1E8]">IMA House, Kochi</span>
+		</div>
+
+		<div class="flex items-center gap-3 font-['Figtree']">
+			<span class="text-[#70B5F4] font-semibold w-24">Prize</span>
+			<span class="text-[#F5F1E8]/40">•</span>
+			<span class="text-[#F5F1E8]">₹55,000</span>
+		</div>
+
+	</div>
+
+	<div class="mt-12 flex justify-center">
+		<a
+			href="/archive/2025"
+			class="inline-flex items-center justify-center px-6 py-3 border border-[#70B5F4] text-[#70B5F4] rounded-full hover:bg-[#70B5F4] hover:text-[#020912] transition"
+		>
+			View Details
+		</a>
+	</div>
+
+</div>
+
+		<!-- RIGHT : IMAGE LAYOUT -->
+		<div
+	class="relative h-[300px] lg:h-[520px]
+	order-1 lg:order-2
+	flex justify-center lg:block"
+>
+
+	<img
+		src="/media/2025/2.jpg"
+		alt="TIQ"
+		class="w-full max-w-[340px] h-[300px] object-cover rounded-[2rem] shadow-2xl
+		lg:absolute lg:top-0 lg:right-0 lg:h-[360px]
+		lg:w-[95%] lg:max-w-none"
+	/>
+
+</div>
+
+	</div>
+
+</div>
+
 
 
 
@@ -216,30 +298,345 @@ items-start lg:items-center
   />
 </div>
 
-<div
-  class="flex flex-col items-center justify-center
-         bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a]
-         min-h-[60vh] lg:min-h-[75vh]
-         py-20 px-6 text-center"
->
 
-    <h1
-  class="font-[merriweather] text-[#70B5F4]
-         text-4xl sm:text-6xl lg:text-7xl xl:text-8xl
-         leading-tight text-center"
->
-  Are you up against the best?
-</h1>
 
-		<p class="mt-4 text-[#70B5F4]/90 text-base sm:text-lg font-[merriweather]">
-  Register to compete for a total prize pool of ₹55,000.
-</p>
+<!-- QUIZMASTERS TIMELINE -->
+<div class="bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a] py-24 px-6 lg:px-20 overflow-hidden">
 
-		<a href="/register" class="mt-6 px-5 py-2 bg-[#70B5F4] font-[merriweather] rounded-full text-xl hover:bg-white transition-all duration-300">
-			Register Now
-		</a>
-		<p class="mt-4 text-[#70B5F4] font-[merriweather]"> Registration fees ₹200/Team. Free for School Students</p>
+	<div class="max-w-7xl mx-auto text-center">
+
+		<!-- SECTION LABEL -->
+		<p class="text-[#D4AF37] uppercase tracking-[0.35em] text-sm mb-4">
+			Legacy of Voices
+		</p>
+
+		<!-- HEADING -->
+		<h2
+			class="text-[#70B5F4]
+			text-5xl md:text-6xl
+			font-[Poppins] font-semibold tracking-tight"
+		>
+			The Quizmasters of TIQ
+		</h2>
+
+		<p
+			class="mt-6 text-[#F5F1E8]/80
+			max-w-3xl mx-auto
+			leading-relaxed
+			text-base md:text-lg"
+		>
+			Over the years, The Illuminati Quiz has welcomed
+			some of India’s most iconic quizmasters —
+			each bringing their own style, energy and legacy
+			to the TIQ stage.
+		</p>
+
+		<!-- TIMELINE -->
+		<div class="relative mt-24">
+
+			<!-- CONNECTING LINE -->
+			<div
+				class="hidden md:block
+				absolute top-24 left-0 w-[75%] h-[2px] left-[12.5%]
+				bg-gradient-to-r from-[#D4AF37]/10 via-[#D4AF37]/70 to-[#D4AF37]/10"
+			/>
+
+			<!-- GRID -->
+			<div
+				class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4
+				gap-14 relative z-10"
+			>
+
+				<!-- MAJOR -->
+				<div class="flex flex-col items-center">
+
+					<div class="relative flex items-center justify-center">
+
+	<!-- OUTER HALO -->
+	<div
+		class="absolute
+		w-56 h-56 rounded-full
+		bg-[#D4AF37]/30
+		blur-3xl"
+	/>
+
+	<!-- GLOW RING -->
+	<div
+		class="absolute
+		w-44 h-44 rounded-full
+		border border-[#D4AF37]/40"
+	/>
+
+	<!-- IMAGE -->
+	<img
+		src="/media/quizmasters/Major.jpg"
+		alt="Major Chandrakanth Nair"
+		class="relative
+		w-40 h-40
+		object-cover rounded-full
+		border-[3px] border-[#D4AF37]
+		shadow-[0_0_60px_rgba(212,175,55,0.35)]"
+	/>
+</div>
+
+					<h3
+						class="mt-6 text-[#F5F1E8]
+						text-2xl
+						font-[Poppins]
+						font-semibold leading-snug"
+					>
+						Major Chandrakanth Nair
+					</h3>
+
+					<p
+						class="mt-2 text-[#D4AF37]
+						tracking-[0.2em]
+						text-sm uppercase"
+					>
+						2012 — Present
+					</p>
+
+				</div>
+
+				<!-- SADHASIV -->
+				<div class="flex flex-col items-center">
+
+					<div class="relative">
+
+						<div
+							class="absolute inset-0 rounded-full
+							bg-[#70B5F4]/10 blur-xl scale-110"
+						/>
+
+						<img
+							src="/media/quizmasters/Sadhasiv.jpg"
+							alt="Sadhasiv N"
+							class="relative
+							w-32 h-32
+							object-cover rounded-full
+							border border-[#70B5F4]/40"
+						/>
+
+					</div>
+
+					<h3
+						class="mt-5 text-[#F5F1E8]
+						text-xl font-[Poppins]"
+					>
+						Sadhasiv N
+					</h3>
+
+					<p
+						class="mt-1 text-[#70B5F4]/80
+						text-sm tracking-[0.15em]"
+					>
+						2010 — 2011
+					</p>
+
+				</div>
+
+				<!-- SURESH -->
+				<div class="flex flex-col items-center">
+
+					<div class="relative">
+
+						<div
+							class="absolute inset-0 rounded-full
+							bg-[#70B5F4]/10 blur-xl scale-110"
+						/>
+
+						<img
+							src="/media/quizmasters/Suresh.jpg"
+							alt="Nagadarshan Suresh"
+							class="relative
+							w-32 h-32
+							object-cover rounded-full
+							border border-[#70B5F4]/40"
+						/>
+
+					</div>
+
+					<h3
+						class="mt-5 text-[#F5F1E8]
+						text-xl font-[Poppins]"
+					>
+						Nagadarshan Suresh
+					</h3>
+
+					<p
+						class="mt-1 text-[#70B5F4]/80
+						text-sm tracking-[0.15em]"
+					>
+						2009
+					</p>
+
+				</div>
+
+				<!-- UDUPA -->
+				<div class="flex flex-col items-center">
+
+					<div class="relative">
+
+						<div
+							class="absolute inset-0 rounded-full
+							bg-[#70B5F4]/10 blur-xl scale-110"
+						/>
+
+						<img
+							src="/media/quizmasters/Udupa.jpg"
+							alt="Thajaswi Udupa"
+							class="relative
+							w-32 h-32
+							object-cover rounded-full
+							border border-[#70B5F4]/40"
+						/>
+
+					</div>
+
+					<h3
+						class="mt-5 text-[#F5F1E8]
+						text-xl font-[Poppins]"
+					>
+						Thajaswi Udupa
+					</h3>
+
+					<p
+						class="mt-1 text-[#70B5F4]/80
+						text-sm tracking-[0.15em]"
+					>
+						2008
+					</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
 	</div>
+
+</div>
+
+
+
+<!-- ARCHIVE SECTION -->
+<div class="bg-[#A9D1F7] py-24 px-6 lg:px-20">
+
+	<div class="max-w-6xl mx-auto text-center">
+
+		
+
+		<h2
+			class="text-[#020913]
+			font-[merriweather]
+			text-5xl"
+		>
+			<!-- BADGE (HIGHLIGHTED) -->
+<div class="mb-5">
+	<span
+		class="inline-flex items-center justify-center
+
+		px-5 py-2
+
+		bg-[#020913]/10
+		border border-[#020913]
+
+		text-[#020913]
+		text-base md:text-lg
+
+		font-bold tracking-[0.35em]
+		uppercase
+
+		rounded-full"
+	>
+		18 EDITIONS
+	</span>
+</div>
+			One Continuing Legacy.
+		</h2>
+
+		<p class="mt-4 text-base md:text-lg font-light text-[#020913]">
+			Explore the history of The Illuminati Quiz through
+			posters, winners, reports, and memories
+			from previous editions.
+		</p>
+
+		<div
+			class="grid md:grid-cols-3 gap-6
+			mt-14"
+		>
+
+			<img src="/media/2024/1.webp" class="rounded-2xl h-72 w-full object-cover" />
+			<img src="/media/2023/1.webp" class="rounded-2xl h-72 w-full object-cover" />
+			<img src="/media/2022/1.webp" class="rounded-2xl h-72 w-full object-cover" />
+
+		</div>
+
+		</div>  
+		
+		<div class="mt-10 flex justify-center"> 
+			
+			<a href="/archive/2025" class="inline-flex items-center 
+			justify-center px-6 py-3 
+			bg-[#020913]/10
+			border border-[#020913] text-[#020913] rounded-full 
+			hover:bg-[#70B5F4] hover:text-[#020912] transition" > 
+			Explore Archives </a> 
+		</div>
+
+	
+
+</div>
+
+
+<!-- TEAM SECTION -->
+<div
+	class="bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a]
+	py-24 px-6 lg:px-20"
+>
+
+	<div class="max-w-5xl mx-auto text-center">
+
+		<p class="text-[#D4AF37] uppercase tracking-[0.25em] mb-4">
+			The People Behind TIQ
+		</p>
+
+		<h2
+			class="text-[#70B5F4]
+			font-[merriweather]
+			text-5xl"
+		>
+			Built by students.<br />
+			Driven by legacy.
+		</h2>
+
+		<p class="mt-6 text-[#F5F1E8] leading-relaxed">
+			Every edition of The Illuminati Quiz is organised
+			by a passionate student team continuing a tradition
+			that spans nearly two decades.
+		</p>
+
+		<a
+			href="/team"
+			class="inline-block mt-10
+			px-6 py-3
+			border border-[#70B5F4]
+			text-[#70B5F4]
+			rounded-full
+			hover:bg-[#70B5F4]
+			hover:text-[#020912]
+			transition"
+		>
+			Meet the Team
+		</a>
+
+	</div>
+
+</div>
+
+
+
+
 
 	
 

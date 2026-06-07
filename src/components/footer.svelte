@@ -1,115 +1,89 @@
 <script>
-	import { Instagram, Linkedin, MapPin } from "lucide-svelte";
+	import { Instagram, Linkedin, Twitter, Mail, MapPin } from "lucide-svelte";
 </script>
-<!--
-<footer class="w-full bg-[#B3D8FF] text-[#0B1E3F] py-10 mt-0">
-	<div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10">
 
-		
-		<div class="flex flex-col">
-			<h2 class="text-xl font-bold">The Illuminati Quiz</h2>
-			<p class="mt-2 text-sm text-[#0B1E3F]/80">
-				The largest intercollegiate quiz in South India.
+<footer class="w-full bg-[#A9D1F7] text-[#0B1E3F]">
+
+	<div class="max-w-6xl mx-auto px-6 py-10">
+
+		<!-- TOP: BRAND -->
+		<div class="text-center space-y-3">
+
+			<h2 class="text-2xl md:text-3xl font-[merriweather] font-semibold">
+				The Illuminati Quiz
+			</h2>
+
+			<p class="text-sm text-[#0B1E3F]/70 max-w-xl mx-auto leading-relaxed">
+				South India’s largest intercollegiate quizzing experience,
+				built at Govt. Model Engineering College.
 			</p>
 
-			<div class="mt-5 flex items-start gap-3">
-				<MapPin class="w-5 h-5 flex-shrink-0" />
-				<div class="text-sm">
-					Govt. Model Engineering College, Thrikkakara<br />
-					Kerala, India
-				</div>
-			</div>
+			<p class="flex items-center justify-center gap-2 text-sm text-[#0B1E3F]/60">
+				<MapPin class="w-4 h-4" />
+				Thrikkakara, Kerala
+			</p>
+
 		</div>
 
-		
-		<div class="flex flex-col mt-6 sm:mt-0">
-			<h3 class="text-lg font-semibold">Quick Links</h3>
-			<ul class="mt-3 space-y-2 text-sm">
-				<li><a href="/" class="hover:underline">Home</a></li>
-				<li><a href="/about" class="hover:underline">About Us</a></li>
-				<li><a href="/gallery" class="hover:underline">Gallery</a></li>
-				<li><a href="/contact" class="hover:underline">Contact</a></li>
-				<li><a href="/register" class="hover:underline">Register</a></li>
-			</ul>
+		<!-- DIVIDER -->
+		<div class="my-6 border-t border-[#0B1E3F]/10"></div>
+
+		<!-- LINKS (MINIMAL INLINE STYLE) -->
+		<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-[#0B1E3F]/70">
+
+			<a href="/" class="hover:text-[#70B5F4] transition">Home</a>
+			<span class="opacity-30">/</span>
+
+			<a href="/about" class="hover:text-[#70B5F4] transition">About</a>
+			<span class="opacity-30">/</span>
+
+			<a href="/gallery" class="hover:text-[#70B5F4] transition">Gallery</a>
+			<span class="opacity-30">/</span>
+
+			<a href="/archive" class="hover:text-[#70B5F4] transition">Archive</a>
+			<span class="opacity-30">/</span>
+
+			<a href="/team" class="hover:text-[#70B5F4] transition">Team</a>
+
 		</div>
 
-		
-		<div class="flex flex-col mt-6 md:mt-0">
-			<h3 class="text-lg font-semibold">Social Media</h3>
-			<div class="flex items-center gap-5 mt-5">
-				<a href="https://www.instagram.com/mec_illuminati?igsh=MXB1a2VoYTVqcW1ybw==" target="_blank" class="hover:opacity-70">
-					<Instagram class="w-6 h-6" />
-				</a>
-				<a href="https://www.linkedin.com/company/illuminati-quiz-club/" target="_blank" class="hover:opacity-70">
-					<Linkedin class="w-6 h-6" />
-				</a>
-			</div>
+		<!-- SOCIAL ROW -->
+		<div class="mt-10 flex justify-center gap-4">
+
+			<a href="https://www.instagram.com/mec_illuminati"
+				target="_blank"
+				class="p-2 rounded-full border border-[#0B1E3F]/10
+				hover:border-[#70B5F4] hover:bg-[#70B5F4]/10 transition">
+				<Instagram class="w-5 h-5" />
+			</a>
+
+			<a href="https://www.linkedin.com/company/illuminati-quiz-club/"
+				target="_blank"
+				class="p-2 rounded-full border border-[#0B1E3F]/10
+				hover:border-[#70B5F4] hover:bg-[#70B5F4]/10 transition">
+				<Linkedin class="w-5 h-5" />
+			</a>
+
+			<a href="https://x.com/IlluminatiQuiz"
+				target="_blank"
+				class="p-2 rounded-full border border-[#0B1E3F]/10
+				hover:border-[#70B5F4] hover:bg-[#70B5F4]/10 transition">
+				<Twitter class="w-5 h-5" />
+			</a>
+
+			<a href="mailto:illuminatiquiz@gmail.com"
+				class="p-2 rounded-full border border-[#0B1E3F]/10
+				hover:border-[#70B5F4] hover:bg-[#70B5F4]/10 transition">
+				<Mail class="w-5 h-5" />
+			</a>
+
+		</div>
+
+		<!-- BOTTOM LINE -->
+		<div class="mt-10 text-center text-xs text-[#0B1E3F]/50">
+			© {new Date().getFullYear()} The Illuminati Quiz Club
 		</div>
 
 	</div>
 
-	<div class="text-center text-xs mt-10 opacity-70">
-		© {new Date().getFullYear()} The Illuminati Quiz Club. All rights reserved.
-	</div>
-</footer>
--->
-<footer class="w-full bg-[#B3D8FF] text-[#0B1E3F] py-6 sm:py-10">
-  <div
-    class="max-w-6xl mx-auto px-6
-           grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3
-           gap-6 sm:gap-10">
-
-    <!-- LEFT: Title + Location -->
-    <div class="flex flex-col">
-      <h2 class="text-lg sm:text-xl font-bold">The Illuminati Quiz</h2>
-      <p class="mt-1 sm:mt-2 text-sm text-[#0B1E3F]/80">
-        The largest intercollegiate quiz in South India.
-      </p>
-
-      <div class="mt-3 sm:mt-5 flex items-start gap-2">
-        <MapPin class="w-4 h-4 mt-0.5 flex-shrink-0" />
-        <div class="text-sm leading-snug">
-          Govt. Model Engineering College, Thrikkakara<br />
-          Kerala, India
-        </div>
-      </div>
-    </div>
-
-    <!-- MIDDLE: Quick Links -->
-    <div class="flex flex-col mt-4 sm:mt-0">
-      <h3 class="text-base sm:text-lg font-semibold">Quick Links</h3>
-
-      <!-- 2 columns ONLY on mobile -->
-      <ul
-        class="mt-2 grid grid-cols-2 sm:grid-cols-1
-               gap-y-2 text-sm">
-        <li><a href="/" class="hover:underline">Home</a></li>
-        <li><a href="/about" class="hover:underline">About</a></li>
-        <li><a href="/gallery" class="hover:underline">Gallery</a></li>
-        <li><a href="/contact" class="hover:underline">Contact</a></li>
-        <li class="col-span-2 sm:col-span-1">
-          <a href="/register" class="hover:underline">Register</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- RIGHT: Social Media -->
-    <div class="flex flex-col mt-4 md:mt-0">
-      <h3 class="text-base sm:text-lg font-semibold">Social Media</h3>
-      <div class="flex items-center gap-4 mt-3 sm:mt-5">
-        <a href="https://www.instagram.com/mec_illuminati?igsh=MXB1a2VoYTVqcW1ybw==" target="_blank" class="hover:opacity-70">
-          <Instagram class="w-5 h-5 sm:w-6 sm:h-6" />
-        </a>
-        <a href="https://www.linkedin.com/company/illuminati-quiz-club/" target="_blank" class="hover:opacity-70">
-          <Linkedin class="w-5 h-5 sm:w-6 sm:h-6" />
-        </a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Copyright -->
-  <div class="text-center text-xs mt-4 sm:mt-10 opacity-70">
-    © {new Date().getFullYear()} The Illuminati Quiz Club. All rights reserved.
-  </div>
 </footer>
