@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import { archives } from '../../../data/archive';
-
+import { Eye, Download } from "lucide-svelte";
 	const year = Number($page.params.year);
 
 	const data = archives.find((a) => a.year === year);
@@ -62,6 +62,8 @@
 	</section>
 
 	<!-- WINNERS -->
+
+{#if data.winners}
 	<section class="px-6 md:px-12 py-24">
 
 	<h2 class="text-4xl font-[merriweather] mb-14">
@@ -90,11 +92,7 @@
 							{person.name}
 						</h3>
 
-						{#if person.college}
-							<p class="text-white/40 mt-1">
-								{person.college}
-							</p>
-						{/if}
+						
 
 					</div>
 
@@ -124,11 +122,7 @@
 							{person.name}
 						</h3>
 
-						{#if person.college}
-							<p class="text-white/40 mt-1">
-								{person.college}
-							</p>
-						{/if}
+						
 
 					</div>
 
@@ -158,11 +152,7 @@
 							{person.name}
 						</h3>
 
-						{#if person.college}
-							<p class="text-white/40 mt-1">
-								{person.college}
-							</p>
-						{/if}
+						
 
 					</div>
 
@@ -176,99 +166,113 @@
 
 </section>
 
+{/if}
+
 	<!-- REPORTS -->
 	{#if data.reports}
 
-<section class="px-6 md:px-12 pb-24">
+<section class="px-6 md:px-12 py-24">
 
 	<h2 class="text-4xl font-[merriweather] mb-12">
 		Reports
 	</h2>
 
-	<div class="flex flex-col gap-5 max-w-4xl">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-9xl">
 
 		<!-- MAIN REPORT -->
 		{#if data.reports.main}
 
-			<a
-				href={data.reports.main}
-				target="_blank"
-				class="rounded-2xl border border-white/10
-				bg-[#0D1117]
-				p-6 hover:border-[#4FD1FF]/40 transition"
-			>
+			<div
+	class="rounded-2xl border border-white/10
+	bg-[#0D1117]
+	p-6 hover:border-[#4FD1FF]/40 transition"
+>
 
 				<div class="flex items-center justify-between gap-6">
 
 					<div>
 
-						<h3 class="text-2xl font-[merriweather] mb-2">
-							TIQ {data.year} REPORT
+						<h3 class="text-xl lg:text-2xl font-[merriweather] mb-2">
+							TIQ {data.year} Report
 						</h3>
 
 						
 
 					</div>
 
-					<div
-						class="flex gap-6 text-sm uppercase tracking-[0.2em]"
-					>
+					<div class="flex items-center gap-4">
 
-						<span class="text-[#4FD1FF]">
-							View
-						</span>
+	<a
+		href={data.reports.main}
+		target="_blank"
+		aria-label="View Report"
+		class="text-[#4FD1FF] hover:scale-110 transition"
+	>
+		<Eye class="w-5 h-5" />
+	</a>
 
-						<span class="text-[#D4AF37]">
-							Download
-						</span>
+	<a
+		href={data.reports.main}
+		download
+		aria-label="Download Report"
+		class="text-[#D4AF37] hover:scale-110 transition"
+	>
+		<Download class="w-5 h-5" />
+	</a>
 
-					</div>
+</div>
 
 				</div>
 
-			</a>
+			</div>
 
 		{/if}
 
 		<!-- ANNUAL REPORT -->
 		{#if data.reports.annual}
 
-			<a
-				href={data.reports.annual}
-				target="_blank"
-				class="rounded-2xl border border-white/10
-				bg-[#0D1117]
-				p-6 hover:border-[#D4AF37]/40 transition"
-			>
+			<div
+	class="rounded-2xl border border-white/10
+	bg-[#0D1117]
+	p-6 hover:border-[#4FD1FF]/40 transition"
+>
 
 				<div class="flex items-center justify-between gap-6">
 
 					<div>
 
 						<h3 class="text-2xl font-[merriweather] mb-2">
-							ANNUAL CLUB REPORT
+							Annual Club Report
 						</h3>
 
 						
 					</div>
 
-					<div
-						class="flex gap-6 text-sm uppercase tracking-[0.2em]"
-					>
+					<div class="flex items-center gap-4">
 
-						<span class="text-[#4FD1FF]">
-							View
-						</span>
+	<a
+		href={data.reports.main}
+		target="_blank"
+		aria-label="View Report"
+		class="text-[#4FD1FF] hover:scale-110 transition"
+	>
+		<Eye class="w-5 h-5" />
+	</a>
 
-						<span class="text-[#D4AF37]">
-							Download
-						</span>
+	<a
+		href={data.reports.main}
+		download
+		aria-label="Download Report"
+		class="text-[#D4AF37] hover:scale-110 transition"
+	>
+		<Download class="w-5 h-5" />
+	</a>
 
-					</div>
+</div>
 
 				</div>
 
-			</a>
+			</div>
 
 		{/if}
 
@@ -279,6 +283,7 @@
 {/if}
 
 	<!-- OTHER EVENTS -->
+{#if data.events && data.events.length > 0}
 	<section class="px-6 md:px-12 pb-24">
 
 	<h2 class="text-4xl font-[merriweather] mb-12">
@@ -348,41 +353,52 @@
 	</div>
 
 </section>
+{/if}
 
 	<!-- GALLERY PREVIEW -->
 	<section class="px-6 md:px-12 pb-32">
 
-		<div class="flex items-center justify-between mb-12">
+	<div
+		class="max-w-4xl mx-auto
+		text-center
+		border border-white/10
+		bg-[#0D1117]
+		rounded-3xl
+		p-10"
+	>
 
-			<h2 class="text-4xl font-[merriweather]">
-				Gallery
-			</h2>
+		<h2
+			class="text-4xl font-[merriweather]
+			text-white"
+		>
+			Gallery
+		</h2>
 
-			<a
-				href="/gallery"
-				class="text-[#4FD1FF] hover:text-[#D4AF37] transition"
-			>
-				View Full Gallery →
-			</a>
+		<p
+			class="mt-4 text-white/70
+			max-w-2xl mx-auto"
+		>
+			Explore photographs and memories from
+			TIQ {data.year}.
+		</p>
 
-		</div>
+		<a
+			href="/gallery"
+			class="inline-flex items-center justify-center
+			mt-8 px-6 py-3
+			border border-[#4FD1FF]
+			text-[#4FD1FF]
+			rounded-full
+			hover:bg-[#4FD1FF]
+			hover:text-[#020912]
+			transition"
+		>
+			View Gallery
+		</a>
 
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+	</div>
 
-			{#each data.gallery as img}
-
-				<img
-					src={img}
-					alt="gallery"
-					class="rounded-3xl object-cover
-					h-[320px] w-full"
-				/>
-
-			{/each}
-
-		</div>
-
-	</section>
+</section>
 
 </div>
 

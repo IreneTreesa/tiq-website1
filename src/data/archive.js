@@ -7,9 +7,9 @@ export const archives = [
 
 		title: 'The Illuminati Quiz 2025',
 
-		date: '3 January 2025',
+		date: '3 January 2026',
 
-		venue: 'IMA Hall, Kaloor',
+		venue: 'IMA House, Kaloor',
 
 		quizmaster: 'Major Chandrakanth Nair',
 
@@ -18,85 +18,111 @@ export const archives = [
 		winners: {
 			first: [
 				{
-					name: 'A'
+					name: 'Abid Abdulla'
 					
 				},
 				{
-					name: 'B'
+					name: 'Gokul S'
 				},
 				{
-					name: 'C',
-					college: 'IIT '
+					name: 'Nadeem'
 				}
 			],
 
 			second: [
 				{
-					name: 'R'
+					name: 'Jayakanthan'
 				},
 				{
-					name: 'V'
+					name: 'Preetam'
 				},
 				{
-					name: 'S',
-					college: 'IIT '
+					name: 'Kiran Tyson'
 				}
 			],
 
 			third: [
 				{
-					name: 'A'
+					name: 'Raamanujan'
 				},
 				{
-					name: 'R'
+					name: 'Reitesh'
 				},
 				{
-					name: 'A',
-					college: 'IIT '
+					name: 'Sreehari'
 				}
 			]
 		},
 
 		reports: {
-			annual: '/reports/annual2025.pdf',
-			main: '/reports/quiz2025.pdf'
+			annual: '/reports/club25.pdf',
+			main: '/reports/main25.pdf'
 		},
 
 		events: [
+	
 	{
-		title: 'Football Quiz',
+		title: 'Monthly Informals',
 
-		image: '/media/event1.webp',
+		image: '/media/other_events/MI25.jpeg',
 
-		date: '23 January 2025',
+		date: 'Every month',
 
-		venue: 'SDPK Hall',
+		venue: 'Room 211',
 
 		description:
-			'Conducted as part of TIQ informal circuit with participation from multiple colleges across Kerala.',
+			'The Monthly Informal Quiz were conducted every month as part of the club’s regular engagement activities aimed at sustaining student interest in quizzing. ',
 
 		
 	},
 
 	{
-		title: 'Monthly Informals',
+		title: 'Inceptio Quiz',
 
-		image: '/media/event1.webp',
+		image: '/media/other_events/freshersquiz.jpeg',
 
-		date: '23 January 2025',
+		date: '16 September 2025',
 
-		venue: 'SDPK Hall',
+		venue: 'Internal Auditorium',
 
 		description:
-			'Conducted as part of TIQ informal circuit with participation from multiple colleges across Kerala.',
+			'The Inceptio Quiz was conducted exclusively for first-year students, with the aim of introducing freshers to the culture of quizzing and familiarizing them with the activities of the club.',
+
+		
+	},
+
+	{
+		title: 'Engineer’s Day Quiz',
+
+		image: '/media/other_events/engineersquiz25.jpg',
+
+		date: '18 September 2025',
+
+		venue: '',
+
+		description:
+			'The club organized the Engineer’s Day Quiz in collaboration with the ASME College Chapter to commemorate Engineer’s Day and celebrate the contributions of engineers to society and technological progress.',
+
+		
+	},
+
+	{
+		title: 'La Remontada II',
+
+		image: '/media/other_events/footballquiz25.jpg',
+
+		date: '3 March 2026',
+
+		venue: 'Internal Auditorium',
+
+		description:
+			'La Remontada II, the football quiz conducted exclusively for MEC students, was organized with the aim of engaging students through a themed quiz centered on football, its history, players, clubs, tournaments, and major moments in the sport.',
 
 		
 	}
-],
 
-		gallery: ['/media/2025/1.jpg',
-			'/media/2025/2.jpg',
-			'/media/2025/3.jpg']
+	
+]
 	},
 
 //2024
@@ -107,9 +133,9 @@ export const archives = [
 
 		title: 'The Illuminati Quiz 2024',
 
-		date: '3 January 2024',
+		date: '29th September 2024',
 
-		venue: 'IMA Hall Kaloor',
+		venue: 'Bhavan’s Hall , TD road',
 
 		quizmaster: 'Major Chandrakanth Nair',
 
@@ -118,82 +144,47 @@ export const archives = [
 		winners: {
 			first: [
 				{
-					name: 'A'
+					name: 'Jayakanthan'
 				},
 				{
-					name: 'B'
+					name: 'Manu Sudhakar'
 				},
 				{
-					name: 'C',
-					college: 'IIT '
+					name: 'Jeevan Joseph'
 				}
 			],
 
 			second: [
 				{
-					name: 'R'
+					name: 'Abid Abdulla'
 				},
 				{
-					name: 'V'
+					name: 'Calvin'
 				},
 				{
-					name: 'S',
-					college: 'IIT '
+					name: 'Aravind'
 				}
 			],
 
 			third: [
 				{
-					name: 'A'
+					name: ' J Krishnamoorthy'
 				},
 				{
-					name: 'R'
+					name: 'Aswin Menon'
 				},
 				{
-					name: 'A',
-					college: 'IIT '
+					name: 'Nadeem'
 				}
 			]
 		},
 
 		reports: {
 			
-			main: '/reports/quiz2025.pdf'
-		},
-
-		events: [{
-		title: 'Football Quiz',
-
-		image: '/media/event1.webp',
-
-		date: '23 January 2025',
-
-		venue: 'SDPK Hall',
-
-		description:
-			'Conducted as part of TIQ informal circuit with participation from multiple colleges across Kerala.',
+			main: '/reports/main24.pdf'
+		}
 
 		
-	},
-
-{
-		title: 'Football Quiz',
-
-		image: '/media/event1.webp',
-
-		date: '23 January 2025',
-
-		venue: 'SDPK Hall',
-
-		description:
-			'Conducted as part of TIQ informal circuit with participation from multiple colleges across Kerala.',
-
-		
-	}],
-
-		gallery: ['/media/2024/1.webp',
-			'/media/2024/2.webp',
-			'/media/2024/3.webp']
 	},
 
 //2023
@@ -204,9 +195,9 @@ export const archives = [
 
 		title: 'The Illuminati Quiz 2023',
 
-		date: '3 January 2023',
+		date: '15th October 2023',
 
-		venue: 'IMA Hall, Kaloor',
+		venue: 'Ernakulam Town Hall',
 
 		quizmaster: 'Major Chandrakanth Nair',
 
@@ -215,82 +206,48 @@ export const archives = [
 		winners: {
 			first: [
 				{
-					name: 'A',
+					name: 'Srinath Bhashyam',
 					
 				},
 				{
-					name: 'B'
+					name: 'Jayakanthan R'
 				},
 				{
-					name: 'C',
-					college: 'IIT '
+					name: 'Sidharth Deepesh'
 				}
 			],
 
 			second: [
 				{
-					name: 'R'
+					name: 'Thejaswi Udupa'
 				},
 				{
-					name: 'V'
+					name: 'G Krishnakanth'
 				},
 				{
-					name: 'S',
-					college: 'IIT '
+					name: 'J. Krishnamurthi'
 				}
 			],
 
 			third: [
 				{
-					name: 'A'
+					name: 'Ashwin Menon'
 				},
 				{
-					name: 'R'
+					name: 'Leo Francis'
 				},
 				{
-					name: 'A',
-					college: 'IIT '
+					name: 'Aravind Vidhashankar'
 				}
 			]
 		},
 
 		reports: {
 			
-			main: '/reports/quiz2025.pdf'
-		},
-
-		events: [{
-		title: 'Football Quiz',
-
-		image: '/media/event1.webp',
-
-		date: '23 January 2025',
-
-		venue: 'SDPK Hall',
-
-		description:
-			'Conducted as part of TIQ informal circuit with participation from multiple colleges across Kerala.',
+			main: '/reports/main23.pdf'
+		}
 
 		
-	},
-{
-		title: 'Football Quiz',
-
-		image: '/media/event1.webp',
-
-		date: '23 January 2025',
-
-		venue: 'SDPK Hall',
-
-		description:
-			'Conducted as part of TIQ informal circuit with participation from multiple colleges across Kerala.',
-
-		
-	}],
-
-		gallery: ['/media/2023/1.webp',
-			'/media/2023/2.webp',
-			'/media/2023/3.webp']
 	},
 
 
@@ -301,90 +258,43 @@ export const archives = [
 
 		title: 'The Illuminati Quiz 2022',
 
-		date: '3 January 2022',
+		date: '4th March 2023',
 
-		venue: 'IMA Hall, Kaloor',
+		venue: 'Ernakulam Town Hall',
 
 		quizmaster: 'Major Chandrakanth Nair',
 
 		poster: '/media/2022/1.webp',
 
-		winners: {
-			first: [
-				{
-					name: 'A'
-				},
-				{
-					name: 'B'
-				},
-				{
-					name: 'C',
-					college: 'IIT '
-				}
-			],
+		reports: {
+			
+			main: '/reports/main22.pdf'
+		}
 
-			second: [
-				{
-					name: 'R'
-				},
-				{
-					name: 'V'
-				},
-				{
-					name: 'S',
-					college: 'IIT '
-				}
-			],
+},
 
-			third: [
-				{
-					name: 'A'
-				},
-				{
-					name: 'R'
-				},
-				{
-					name: 'A',
-					college: 'IIT '
-				}
-			]
-		},
 
-		
-
-		events: [{
-		title: 'Football Quiz',
-
-		image: '/media/event1.webp',
-
-		date: '23 January 2025',
-
-		venue: 'SDPK Hall',
-
-		description:
-			'Conducted as part of TIQ informal circuit with participation from multiple colleges across Kerala.',
-
-		
-	},
+//2021
 {
-		title: 'Football Quiz',
+		year: 2021,
+		edition: '14th Edition',
 
-		image: '/media/event1.webp',
+		title: 'The Illuminati Quiz 2021',
 
-		date: '23 January 2025',
+		date: '12th December 2021',
 
-		venue: 'SDPK Hall',
+		venue: 'Ernakulam Town Hall',
 
-		description:
-			'Conducted as part of TIQ informal circuit with participation from multiple colleges across Kerala.',
+		quizmaster: 'Major Chandrakanth Nair',
 
-		
-	}],
+		poster: '/media/2021/1.webp',
 
-		gallery: ['/media/2022/1.webp',
-			'/media/2022/2.webp',
-			'/media/2022/3.webp']
-	}
+		reports: {
+			
+			main: '/reports/main21.pdf'
+		}
+
+}
 
 ];
 

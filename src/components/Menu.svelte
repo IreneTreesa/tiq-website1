@@ -25,7 +25,7 @@
 >
 	<div
 	class="max-w-7xl mx-auto flex items-center justify-between
-	px-5 md:px-8 py-5
+	px-5 md:px-8 py-3
 	border-b border-white/10"
 >
 		<!-- LOGO -->
@@ -80,6 +80,16 @@
 			flex flex-col justify-center items-center
 			md:hidden"
 		>
+
+		<!-- CLOSE BUTTON (NEW) -->
+		<button
+			class="absolute top-6 right-6 text-white text-4xl"
+			on:click={toggleMenu}
+			aria-label="Close Menu"
+		>
+			✕
+		</button>
+
 			<nav class="flex flex-col items-center gap-8">
 				{#each tabs as tab}
 					<a

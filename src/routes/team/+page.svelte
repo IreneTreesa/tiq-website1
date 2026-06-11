@@ -7,7 +7,7 @@
 <div class="min-h-screen bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a] text-white">
 
 	<!-- HERO -->
-	<section class="px-6 md:px-12 pt-32 pb-20 text-center">
+	<section class="px-6 md:px-12 pt-25 pb-20 text-center">
 
 		<p class="uppercase tracking-[0.4em] text-sm text-[#4FD1FF]/70 mb-4">
 			THE PEOPLE BEHIND TIQ
@@ -30,7 +30,7 @@
 	
 
 	<!-- CORE TEAM -->
-	<section class="px-6 md:px-12 py-24">
+	<section class="px-6 md:px-12 py-10">
 
 	<h2 class="text-4xl font-[merriweather] mb-14">
 		Core Team

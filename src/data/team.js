@@ -15,17 +15,18 @@ export const teams = {
 				linkedin: '#'
 			},
 			{
-				name: 'Arjun V Kaimal',
-				role: 'Treasurer',
-				image: '/media/team/Arjun.jpg',
-				linkedin: '#'
-			},
-			{
 				name: 'Nijil Joseph',
 				role: 'Secretary',
 				image: '/media/team/Nijil.JPG',
 				linkedin: '#'
 			},
+			{
+				name: 'Arjun V Kaimal',
+				role: 'Treasurer',
+				image: '/media/team/Arjun.JPEG',
+				linkedin: '#'
+			},
+			
 			{
 				name: 'Athul P K',
 				role: 'Event Head',
@@ -49,7 +50,7 @@ export const teams = {
 			{
 				name: 'Amithesh K',
 				role: 'Design Head',
-				image: '/media/team2.webp',
+				image: '/media/team/Amithesh.jpeg',
 				linkedin: '#'
 			},
 			{
@@ -61,17 +62,24 @@ export const teams = {
 			{
 				name: 'Keziya Maria Rony',
 				role: 'Content Head',
-				image: '/media/team2.webp',
+				image: '/media/team/Kezia.jpg',
 				linkedin: '#'
 			}
 		],
 
 		members: [
-			'A',
-			'B',
-			'C',
-			'D',
-			'E'
+		'Gopikrishna P',
+'Lakshmi Nair',
+'Bharath Krishna',
+'Dhishaj C', 
+'Namya Paul',
+'Kavya Ajo', 
+'Azmil Mohammed',
+'Farseen Ahammed',
+'Jeeson Paul Ajith',
+'Hrishikesh S Kumar',
+'Irene Treesa Martin',
+'Ajsal Mohammed'
 		]
 	},
 

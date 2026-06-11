@@ -20,15 +20,15 @@
 	class="relative
 	min-h-[calc(100vh-64px)]
 	bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a]
-	overflow-hidden flex"
+	overflow-hidden flex flex-col lg:flex-row items-center"
 >
 	<div
 	class="w-full pl-6 pr-6 lg:pl-25 lg:pr-16
-	grid lg:grid-cols-2 gap-12
-	pt-12 pb-12 lg:py-20"
+	grid grid-cols-1 lg:grid-cols-2 gap-12 items-center
+	pt-16 pb-16 lg:py-20"
 >
 
-		<div class="z-10 text-center lg:text-left lg:max-w-xl">
+		<div class="z-10 text-center lg:text-left lg:max-w-xl mx-auto lg:mx-0">
 
 	<!-- ANSYS -->
 	<div class="mb-6">
@@ -99,16 +99,16 @@
 
 	</div>
 
-	<div class="hidden lg:block absolute right-0 top-0 bottom-0 w-[45%]">
+	<div class="hidden lg:block absolute right-0 top-0 h-full w-[45%] pointer-events-none">
 		<img
 			src="/media/pic1 (1).png"
 			alt="TIQ Hero"
-			class="absolute top-0 right-35 h-[55vh] object-cover rounded-b-[3rem] shadow-2xl "
+			class="absolute top-0 right-35 h-[55vh] object-cover rounded-b-[3rem]  "
 		/>
 		<img
 			src="/media/2pic2.png"
 			alt="TIQ Crowd"
-			class="absolute bottom-0 right-[60%] h-[42vh] object-cover rounded-t-[3rem] shadow-2xl"
+			class="absolute bottom-0 right-[60%] h-[42vh] object-cover rounded-t-[3rem] "
 		/>
 	</div>
 
@@ -337,7 +337,7 @@
 			<!-- CONNECTING LINE -->
 			<div
 				class="hidden md:block
-				absolute top-24 left-0 w-[75%] h-[2px] left-[12.5%]
+				absolute top-18 left-0 w-[75%] h-[2px] left-[12.5%]
 				bg-gradient-to-r from-[#D4AF37]/10 via-[#D4AF37]/70 to-[#D4AF37]/10"
 			/>
 

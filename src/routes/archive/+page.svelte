@@ -11,7 +11,7 @@ onMount(() => {
 </script>
 
 
-<div class="min-h-screen bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a] text-white px-6 md:px-12 py-32">
+<div class="min-h-screen bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a] text-white px-6 md:px-12 py-15">
 
 	<!-- HERO -->
 	<section class="text-center mb-24">

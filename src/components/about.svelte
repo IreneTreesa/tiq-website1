@@ -1,8 +1,8 @@
 <script>
 	
 	import { page } from '$app/stores';
-import { Instagram, Linkedin } from 'lucide-svelte';
-	
+
+import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
 
 	let scrollRef;
 
@@ -192,9 +192,9 @@ import { Instagram, Linkedin } from 'lucide-svelte';
 >
 
 	<div
-		class="max-w-6xl mx-auto
+		class="max-w-5xl mx-auto
 		flex flex-col lg:flex-row
-		gap-16 items-center lg:items-start"
+		gap-8 lg:gap-10 items-center lg:items-start"
 	>
 
 		<!-- LEFT -->
@@ -231,106 +231,119 @@ import { Instagram, Linkedin } from 'lucide-svelte';
 		</div>
 
 		<!-- RIGHT -->
-		<div class="flex flex-col gap-8 text-center lg:text-left w-full lg:w-auto">
+		
+<div class="flex flex-col gap-6 w-full lg:w-auto">
 
-			<a
-				href="https://www.linkedin.com/company/illuminati-quiz-club/"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="group"
+	<!-- LinkedIn -->
+	<a
+		href="https://www.linkedin.com/company/illuminati-quiz-club/"
+		target="_blank"
+		rel="noopener noreferrer"
+		class="group flex items-center gap-4"
+	>
+		<Linkedin
+			class="w-5 h-5 text-[#D4AF37]
+			group-hover:text-[#70B5F4] transition flex-shrink-0"
+		/>
+
+		<div>
+			<p class="text-sm uppercase tracking-[0.25em] text-[#D4AF37] mb-1">
+				LinkedIn
+			</p>
+
+			<h2
+				class="text-lg text-[#F5F1E8]
+				group-hover:text-[#70B5F4]
+				transition"
 			>
-
-				<p
-					class="text-sm uppercase tracking-[0.25em]
-					text-[#D4AF37] mb-2"
-				>
-					LinkedIn
-				</p>
-
-				<h2
-					class="text-2xl text-[#F5F1E8]
-					group-hover:text-[#70B5F4]
-					transition"
-				>
-					The Illuminati Quiz Club
-				</h2>
-
-			</a>
-
-			<a
-				href="https://www.instagram.com/mec_illuminati?igsh=MW9pZHNycTNxdjhybQ=="
-				target="_blank"
-				rel="noopener noreferrer"
-				class="group"
-			>
-
-				<p
-					class="text-sm uppercase tracking-[0.25em]
-					text-[#D4AF37] mb-2"
-				>
-					Instagram
-				</p>
-
-				<h2
-					class="text-2xl text-[#F5F1E8]
-					group-hover:text-[#70B5F4]
-					transition"
-				>
-					@mec_illuminati
-				</h2>
-
-			</a>
-
-			<a
-				href="https://x.com/IlluminatiQuiz"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="group"
-			>
-
-				<p
-					class="text-sm uppercase tracking-[0.25em]
-					text-[#D4AF37] mb-2"
-				>
-					Twitter
-				</p>
-
-				<h2
-					class="text-2xl text-[#F5F1E8]
-					group-hover:text-[#70B5F4]
-					transition"
-				>
-					IlluminatiQuiz
-				</h2>
-
-			</a>
-
-			<a
-				href="mailto:illuminatiquiz@gmail.com"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="group"
-			>
-
-				<p
-					class="text-sm uppercase tracking-[0.25em]
-					text-[#D4AF37] mb-2"
-				>
-					Email
-				</p>
-
-				<h2
-					class="text-2xl text-[#F5F1E8]
-					group-hover:text-[#70B5F4]
-					transition"
-				>
-					illuminatiquiz@gmail.com
-				</h2>
-
-			</a>
-
+				The Illuminati Quiz Club
+			</h2>
 		</div>
+	</a>
+
+	<!-- Instagram -->
+	<a
+		href="https://www.instagram.com/mec_illuminati?igsh=MW9pZHNycTNxdjhybQ=="
+		target="_blank"
+		rel="noopener noreferrer"
+		class="group flex items-center gap-4"
+	>
+		<Instagram
+			class="w-5 h-5 text-[#D4AF37]
+			group-hover:text-[#70B5F4] transition flex-shrink-0"
+		/>
+
+		<div>
+			<p class="text-sm uppercase tracking-[0.25em] text-[#D4AF37] mb-1">
+				Instagram
+			</p>
+
+			<h2
+				class="text-lg text-[#F5F1E8]
+				group-hover:text-[#70B5F4]
+				transition"
+			>
+				@mec_illuminati
+			</h2>
+		</div>
+	</a>
+
+	<!-- X -->
+	<a
+		href="https://x.com/IlluminatiQuiz"
+		target="_blank"
+		rel="noopener noreferrer"
+		class="group flex items-center gap-4"
+	>
+		<Twitter
+			class="w-5 h-5 text-[#D4AF37]
+			group-hover:text-[#70B5F4] transition flex-shrink-0"
+		/>
+
+		<div>
+			<p class="text-sm uppercase tracking-[0.25em] text-[#D4AF37] mb-1">
+				X
+			</p>
+
+			<h2
+				class="text-lg text-[#F5F1E8]
+				group-hover:text-[#70B5F4]
+				transition"
+			>
+				@IlluminatiQuiz
+			</h2>
+		</div>
+	</a>
+
+	<!-- Email -->
+	<a
+		href="mailto:illuminatiquiz@gmail.com"
+		class="group flex items-center gap-4"
+	>
+		<Mail
+			class="w-5 h-5 text-[#D4AF37]
+			group-hover:text-[#70B5F4] transition flex-shrink-0"
+		/>
+
+		<div>
+			<p class="text-sm uppercase tracking-[0.25em] text-[#D4AF37] mb-1">
+				Email
+			</p>
+
+			<h2
+				class="text-lg text-[#F5F1E8]
+				group-hover:text-[#70B5F4]
+				transition"
+			>
+				illuminatiquiz@gmail.com
+			</h2>
+		</div>
+	</a>
+
+</div>
 
 	</div>
 
 </div>
+
+

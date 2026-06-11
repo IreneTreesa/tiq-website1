@@ -63,7 +63,7 @@
 <div class="min-h-screen bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a] text-white">
 
 	<!-- HERO -->
-	<section class="px-6 md:px-12 pt-32 pb-16 text-center">
+	<section class="px-6 md:px-12 pt-20 pb-16 text-center">
 
 		
 

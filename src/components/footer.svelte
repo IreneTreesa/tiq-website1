@@ -32,16 +32,16 @@
 		<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-[#0B1E3F]/70">
 
 			<a href="/" class="hover:text-[#70B5F4] transition">Home</a>
-			<span class="opacity-30">/</span>
+			<span class="opacity-30">|</span>
 
 			<a href="/about" class="hover:text-[#70B5F4] transition">About</a>
-			<span class="opacity-30">/</span>
+			<span class="opacity-30">|</span>
 
 			<a href="/gallery" class="hover:text-[#70B5F4] transition">Gallery</a>
-			<span class="opacity-30">/</span>
+			<span class="opacity-30">|</span>
 
 			<a href="/archive" class="hover:text-[#70B5F4] transition">Archive</a>
-			<span class="opacity-30">/</span>
+			<span class="opacity-30">|</span>
 
 			<a href="/team" class="hover:text-[#70B5F4] transition">Team</a>
 
