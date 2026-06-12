@@ -20,7 +20,7 @@
 	class="relative
 	min-h-[calc(100vh-64px)]
 	bg-gradient-to-tr from-[#020912] via-[#0b1320] to-[#101a2a]
-	overflow-hidden flex flex-col lg:flex-row items-center"
+	 flex flex-col lg:flex-row items-center"
 >
 	<div
 	class="w-full pl-6 pr-6 lg:pl-25 lg:pr-16
@@ -40,7 +40,7 @@
 		<h2
 			class="mt-1
 			text-[#F5F1E8]
-			text-2xl md:text-4xl lg:text-3xl
+			text-xl md:text-4xl lg:text-3xl
 			font-semibold tracking-[0.08em]"
 		>
 			ANSYS
@@ -62,7 +62,7 @@
 		<h3
 			class="mt-1
 			text-[#F5F1E8]
-			text-2xl md:text-3xl lg:text-3xl
+			text-xl md:text-3xl lg:text-3xl
 			font-semibold"
 		>
 			Sandeep Menon Foundation
@@ -74,7 +74,7 @@
 	<h1
 		class="font-[merriweather]
 		text-[#70B5F4]
-		text-7xl sm:text-6xl md:text-7xl lg:text-8xl
+		text-5xl sm:text-6xl md:text-7xl lg:text-8xl
 		leading-[0.95]"
 	>
 		THE <br />
@@ -86,7 +86,7 @@
 	<p
 		class="mt-6 sm:mt-8
 		text-[#D4AF37]
-		text-2xl sm:text-3xl md:text-4xl
+		text-xl sm:text-3xl md:text-4xl
 		font-['EB_Garamond']
 		italic"
 	>
@@ -128,7 +128,7 @@
 			<h1 class="text-4xl md:text-5xl lg:text-6xl font-[merriweather] text-[#020913] text-center lg:text-left">
 				Get ready for the Largest Quiz in South India
 			</h1>
-			<p class="hidden md:block mt-4 text-base md:text-lg font-light text-[#020913]">
+			<p class="hidden md:block mt-4 text-base md:text-lg font-light text-[#020913]/70 font-['Figtree']">
 				With over 400 participants, including students from IIMs and IITs, attendees come not only for the prize money but also for the convivial quizzing experience.
 			</p>
 		</div>
@@ -140,7 +140,7 @@
 			<h1 class="text-4xl md:text-5xl lg:text-6xl font-[merriweather] text-[#020913] text-center lg:text-left">
 				With a Cash Pool totaling over ₹55,000
 			</h1>
-			<p class="hidden md:block mt-4 text-base md:text-lg font-light text-[#020913]">
+			<p class="hidden md:block mt-4 text-base md:text-lg font-light text-[#020913]/70 font-['Figtree']">
 				Cause nothing’s fun without proper incentive. Special thanks to our sponsors, primarily <b class="font-semibold">Ansys</b>
 			</p>
 		</div>
@@ -155,7 +155,7 @@
 			<h1 class="text-4xl md:text-5xl lg:text-6xl font-[merriweather] text-[#020913] text-center lg:text-left">
 				Hosted by Major Chandrakanth Nair
 			</h1>
-			<p class="hidden md:block mt-4 text-base md:text-lg font-light text-[#020913]">
+			<p class="hidden md:block mt-4 text-base md:text-lg font-light text-[#020913]/70 font-['Figtree']">
 				One of India’s finest Quiz Masters, Major Chandrakanth Nair is here to give you that premium quizzing experience we know him for!
 			</p>
 			
@@ -321,6 +321,7 @@
 
 		<p
 			class="mt-6 text-[#F5F1E8]/80
+			font-['Figtree']
 			max-w-3xl mx-auto
 			leading-relaxed
 			text-base md:text-lg"
@@ -555,7 +556,7 @@
 			One Continuing Legacy.
 		</h2>
 
-		<p class="mt-4 text-base md:text-lg font-light text-[#020913]">
+		<p class="mt-4 text-base md:text-lg font-['Figtree'] text-[#020913]/70">
 			Explore the history of The Illuminati Quiz through
 			posters, winners, reports, and memories
 			from previous editions.
@@ -610,7 +611,7 @@
 			Driven by legacy.
 		</h2>
 
-		<p class="mt-6 text-[#F5F1E8] leading-relaxed">
+		<p class="mt-6 text-[#F5F1E8] leading-relaxed font-['Figtree']">
 			Every edition of The Illuminati Quiz is organised
 			by a passionate student team continuing a tradition
 			that spans nearly two decades.

@@ -251,7 +251,7 @@ import { Eye, Download } from "lucide-svelte";
 					<div class="flex items-center gap-4">
 
 	<a
-		href={data.reports.main}
+		href={data.reports.annual}
 		target="_blank"
 		aria-label="View Report"
 		class="text-[#4FD1FF] hover:scale-110 transition"

@@ -32,7 +32,7 @@
 	<!-- CORE TEAM -->
 	<section class="px-6 md:px-12 py-10">
 
-	<h2 class="text-4xl font-[merriweather] mb-14">
+	<h2 class="text-4xl font-[merriweather] mb-14 text-center md:text-left">
 		Core Team
 	</h2>
 
@@ -104,7 +104,7 @@
 	<!-- TEAM MEMBERS -->
 	<section class="px-6 md:px-12 pb-32">
 
-	<h2 class="text-4xl font-[merriweather] mb-10">
+	<h2 class="text-4xl font-[merriweather] mb-10 text-center md:text-left">
 		Team Members
 	</h2>
 
@@ -117,8 +117,8 @@
 
 			<div class="mb-4 break-inside-avoid">
 
-				<p class="text-white/70 leading-relaxed">
-					• {member}
+				<p class="text-white/70 leading-relaxed text-center md:text-left">
+					 {member}
 				</p>
 
 			</div>

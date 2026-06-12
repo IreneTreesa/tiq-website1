@@ -36,7 +36,7 @@ export const teams = {
 			{
 				name: 'Harry Zacharia',
 				role: 'Publicity Head',
-				image: '/media/team/Harry.jpg',
+				image: '/media/team/Harry1.jpg',
 				linkedin: '#'
 			},
 
@@ -56,7 +56,7 @@ export const teams = {
 			{
 				name: 'John Thomas',
 				role: 'Initiative Head',
-				image: '/media/team/John.jpg',
+				image: '/media/team/John2.jpg',
 				linkedin: '#'
 			},
 			{

@@ -13,6 +13,8 @@
 				The Illuminati Quiz
 			</h2>
 
+			<p class="text-xs uppercase tracking-widest text-gray-400 mt-1">Since 2008</p>
+
 			<p class="text-sm text-[#0B1E3F]/70 max-w-xl mx-auto leading-relaxed">
 				South India’s largest intercollegiate quizzing experience,
 				built at Govt. Model Engineering College.

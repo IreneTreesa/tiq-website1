@@ -2,7 +2,7 @@
 	
 	import { page } from '$app/stores';
 
-import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
+import { Linkedin, Instagram, Mail, Twitter, X } from "lucide-svelte";
 
 	let scrollRef;
 
@@ -33,14 +33,14 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
 			<h1 class="text-center lg:text-left text-4xl sm:text-5xl lg:text-6xl font-[merriweather] text-[#70B5F4] -mt-12">
     About TIQ
 </h1>
-			<p class="mt-6 text-sm sm:text-base leading-relaxed font-light text-white pr-0 sm:pr-10">
+			<p class="mt-6 text-sm sm:text-base leading-relaxed font-['Figtree'] text-white pr-0 sm:pr-10">
 				The Illuminati Quiz (TIQ), the annual inter collegiate quiz competition organised by Govt.
 				Model Engineering College is one of the largest student organised Quiz in South India. Held
 				in memory of the late Sandeep Menon. Like the last edition, Illuminati Quiz will also be
 				open to all categories testing the experience and mettle of working professionals against
 				the young blood of quizzing.
 			</p>
-			<p class="mt-4 text-sm sm:text-base leading-relaxed font-light text-white pr-0 sm:pr-10">
+			<p class="mt-4 text-sm sm:text-base leading-relaxed font-['Figtree'] text-white pr-0 sm:pr-10">
 				The new normal paved way for quizeers across the country to be part of this prestigious
 				event. It also garners a large number of participants from elite colleges like IIMs and
 				IITs, and numerous schools across South India and is well known not just for its attractive
@@ -82,7 +82,7 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
       (1984) – (2008)
     </h2>
 
-    <p class="mt-6 text-sm sm:text-base lg:text-lg leading-relaxed text-[#020913]">
+    <p class="mt-6 text-sm sm:text-base lg:text-lg leading-relaxed text-[#020913] font-['Figtree']">
       Sandeep Menon (batch of 2006 – Model Engineering College) is the founder and guiding spirit of
       the ‘The Illuminati’. An exceptional quizzer, he is affectionately known in local quizzing
       circles as ‘The Illuminatus’. He was diagnosed with cancer in 2005. Despite deteriorating
@@ -104,7 +104,7 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
       </h1>
     </div>
 
-    <div class="flex flex-col gap-6 text-sm sm:text-base font-light text-slate-300 leading-relaxed">
+    <div class="flex flex-col gap-6 text-sm sm:text-base font-light text-slate-300 leading-relaxed font-['Figtree']">
       <p>
         Govt. Model Engineering College, Kochi, is a premier institute of engineering
         education in Kerala. More than just another engineering college, MEC nurtures
@@ -113,7 +113,7 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
         reputation is reflected in its ranking as the 27th best engineering institute
         in the country.
       </p>
-      <p class="border-t border-slate-8xl pt-6 border-[#70B5F4]/20">
+      <p class="border-t border-slate-8xl pt-6 border-[#70B5F4]/20 ">
         Illuminati, the quizzing fraternity of Govt. Model Engineering College, Kochi,
         is among the most active student societies in the campus. Founded by the late
         Sandeep Menon, it has conducted over a hundred intra- and inter-collegiate
@@ -155,14 +155,14 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
 </h1>
 
 
-    <p class="mt-6 text-sm sm:text-base lg:text-lg leading-relaxed text-[#020913]">
+    <p class="mt-6 text-sm sm:text-base lg:text-lg leading-relaxed text-[#020913] font-['Figtree']">
   The Sandeep Menon Foundation is the official supporting foundation of
   The Illuminati Quiz. Founded after Sandeep Menon’s passing, the
   Foundation continues to uphold and support the quiz that he himself
   founded during his time at Govt. Model Engineering College.
 </p>
 
-<p class="mt-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#020913]">
+<p class="mt-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#020913] font-['Figtree']">
   Through its continued backing of The Illuminati Quiz, the Foundation
   honours Sandeep Menon’s legacy and vision, while extending its work
   across education, healthcare, and sport to create meaningful impact
@@ -220,7 +220,7 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
 			<p
 				class="mt-8 text-[#F5F1E8]/80
 				leading-relaxed
-				max-w-xl"
+				max-w-xl font-['Figtree']"
 			>
 				For updates, announcements and event-related information,
 				connect with The Illuminati Quiz through our official
@@ -232,7 +232,7 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
 
 		<!-- RIGHT -->
 		
-<div class="flex flex-col gap-6 w-full lg:w-auto">
+<div class="flex flex-col gap-6 w-full lg:w-auto items-center text-center ">
 
 	<!-- LinkedIn -->
 	<a
@@ -241,16 +241,17 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
 		rel="noopener noreferrer"
 		class="group flex items-center gap-4"
 	>
-		<Linkedin
+		
+
+		<div>
+			<p class="text-sm uppercase tracking-[0.2em] text-[#D4AF37] mb-1">
+				LinkedIn
+			</p>
+<div class="flex items-center gap-4">
+<Linkedin
 			class="w-5 h-5 text-[#D4AF37]
 			group-hover:text-[#70B5F4] transition flex-shrink-0"
 		/>
-
-		<div>
-			<p class="text-sm uppercase tracking-[0.25em] text-[#D4AF37] mb-1">
-				LinkedIn
-			</p>
-
 			<h2
 				class="text-lg text-[#F5F1E8]
 				group-hover:text-[#70B5F4]
@@ -258,6 +259,7 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
 			>
 				The Illuminati Quiz Club
 			</h2>
+</div>
 		</div>
 	</a>
 
@@ -268,16 +270,17 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
 		rel="noopener noreferrer"
 		class="group flex items-center gap-4"
 	>
-		<Instagram
+		
+
+		<div>
+			<p class="text-sm uppercase tracking-[0.2em] text-[#D4AF37] mb-1">
+				Instagram
+			</p>
+<div class="flex items-center gap-4">
+<Instagram
 			class="w-5 h-5 text-[#D4AF37]
 			group-hover:text-[#70B5F4] transition flex-shrink-0"
 		/>
-
-		<div>
-			<p class="text-sm uppercase tracking-[0.25em] text-[#D4AF37] mb-1">
-				Instagram
-			</p>
-
 			<h2
 				class="text-lg text-[#F5F1E8]
 				group-hover:text-[#70B5F4]
@@ -285,6 +288,7 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
 			>
 				@mec_illuminati
 			</h2>
+</div>
 		</div>
 	</a>
 
@@ -295,16 +299,26 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
 		rel="noopener noreferrer"
 		class="group flex items-center gap-4"
 	>
-		<Twitter
-			class="w-5 h-5 text-[#D4AF37]
-			group-hover:text-[#70B5F4] transition flex-shrink-0"
-		/>
+		
 
 		<div>
-			<p class="text-sm uppercase tracking-[0.25em] text-[#D4AF37] mb-1">
+			<p class="text-sm uppercase tracking-[0.2em] text-[#D4AF37] mb-1">
 				X
 			</p>
-
+<div class="flex items-center gap-4">
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  fill="none" 
+  stroke="currentColor" 
+  stroke-width="2" 
+  stroke-linecap="round" 
+  stroke-linejoin="round" 
+  class="w-5 h-5 text-[#D4AF37] group-hover:text-[#70B5F4] transition flex-shrink-0"
+>
+  <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+</svg>
 			<h2
 				class="text-lg text-[#F5F1E8]
 				group-hover:text-[#70B5F4]
@@ -312,6 +326,7 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
 			>
 				@IlluminatiQuiz
 			</h2>
+</div>
 		</div>
 	</a>
 
@@ -320,23 +335,28 @@ import { Linkedin, Instagram, Mail, Twitter } from "lucide-svelte";
 		href="mailto:illuminatiquiz@gmail.com"
 		class="group flex items-center gap-4"
 	>
-		<Mail
-			class="w-5 h-5 text-[#D4AF37]
-			group-hover:text-[#70B5F4] transition flex-shrink-0"
-		/>
+		
 
 		<div>
-			<p class="text-sm uppercase tracking-[0.25em] text-[#D4AF37] mb-1">
+			<p class="text-sm uppercase tracking-[0.2em] text-[#D4AF37] mb-1">
 				Email
 			</p>
+<div class="flex items-center gap-4">
+	<Mail
+		class="w-5 h-5 text-[#D4AF37]
+		group-hover:text-[#70B5F4] transition flex-shrink-0"
+	/>
+		
+	<h2
+		class="text-lg text-[#F5F1E8]
+		group-hover:text-[#70B5F4]
+		transition"
+	>
+		illuminatiquiz@gmail.com
+	</h2>
+</div>
 
-			<h2
-				class="text-lg text-[#F5F1E8]
-				group-hover:text-[#70B5F4]
-				transition"
-			>
-				illuminatiquiz@gmail.com
-			</h2>
+
 		</div>
 	</a>
 
