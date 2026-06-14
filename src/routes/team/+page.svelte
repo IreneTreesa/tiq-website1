@@ -20,7 +20,7 @@
 			Team
 		</h1>
 
-		<p class="max-w-2xl mx-auto text-white/60 leading-relaxed">
+		<p class="max-w-2xl mx-auto text-white/60 leading-relaxed font-['Figtree']">
 			The organisers, coordinators, designers, quizmasters,
 			and chaos managers behind TIQ.
 		</p>
@@ -87,7 +87,7 @@
 						{member.name}
 					</h3>
 
-					<p class="text-white/50 text-sm">
+					<p class="text-white/50 text-sm font-['Figtree']">
 						{member.role}
 					</p>
 
@@ -117,7 +117,7 @@
 
 			<div class="mb-4 break-inside-avoid">
 
-				<p class="text-white/70 leading-relaxed text-center md:text-left">
+				<p class="text-white/70 leading-relaxed text-center md:text-left font-['Figtree']">
 					 {member}
 				</p>
 

@@ -33,7 +33,7 @@
 	<!-- ANSYS -->
 	<div class="mb-6">
 
-		<p class="text-[#F5F1E8]/70 text-s md:text-base tracking-wide mb-1">
+		<p class="text-[#F5F1E8]/70 text-s md:text-base tracking-wide mb-1 font-['Figtree']">
 			Presented by
 		</p>
 
@@ -54,7 +54,7 @@
 		<p
 			class="text-[#F5F1E8]/70
 			text-sm md:text-base
-			tracking-wide text-s"
+			tracking-wide text-s font-['Figtree']"
 		>
 			In collaboration with
 		</p>
@@ -314,7 +314,7 @@
 		<h2
 			class="text-[#70B5F4]
 			text-5xl md:text-6xl
-			font-[Poppins] font-semibold tracking-tight"
+			font-[merriweather] tracking-tight"
 		>
 			The Quizmasters of TIQ
 		</h2>

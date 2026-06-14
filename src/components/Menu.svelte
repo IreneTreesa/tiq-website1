@@ -43,7 +43,7 @@
 				<a
 					href={tab.link}
 					class={`relative text-sm uppercase tracking-[0.2em]
-					transition-all duration-300
+					transition-all duration-300 font-['Figtree']
 
 					${
 						$page.url.pathname === tab.link

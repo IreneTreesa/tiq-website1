@@ -33,14 +33,14 @@ import { Linkedin, Instagram, Mail, Twitter, X } from "lucide-svelte";
 			<h1 class="text-center lg:text-left text-4xl sm:text-5xl lg:text-6xl font-[merriweather] text-[#70B5F4] -mt-12">
     About TIQ
 </h1>
-			<p class="mt-6 text-sm sm:text-base leading-relaxed font-['Figtree'] text-white pr-0 sm:pr-10">
+			<p class="mt-6 text-sm sm:text-base leading-relaxed font-['Figtree'] font-light text-slate-300 pr-0 sm:pr-10">
 				The Illuminati Quiz (TIQ), the annual inter collegiate quiz competition organised by Govt.
 				Model Engineering College is one of the largest student organised Quiz in South India. Held
 				in memory of the late Sandeep Menon. Like the last edition, Illuminati Quiz will also be
 				open to all categories testing the experience and mettle of working professionals against
 				the young blood of quizzing.
 			</p>
-			<p class="mt-4 text-sm sm:text-base leading-relaxed font-['Figtree'] text-white pr-0 sm:pr-10">
+			<p class="mt-4 text-sm sm:text-base leading-relaxed font-['Figtree'] font-light text-slate-300 pr-0 sm:pr-10">
 				The new normal paved way for quizeers across the country to be part of this prestigious
 				event. It also garners a large number of participants from elite colleges like IIMs and
 				IITs, and numerous schools across South India and is well known not just for its attractive
@@ -218,7 +218,7 @@ import { Linkedin, Instagram, Mail, Twitter, X } from "lucide-svelte";
 			</h1>
 
 			<p
-				class="mt-8 text-[#F5F1E8]/80
+				class="mt-8 font-light text-slate-300
 				leading-relaxed
 				max-w-xl font-['Figtree']"
 			>
@@ -232,7 +232,11 @@ import { Linkedin, Instagram, Mail, Twitter, X } from "lucide-svelte";
 
 		<!-- RIGHT -->
 		
-<div class="flex flex-col gap-6 w-full lg:w-auto items-center text-center ">
+<div
+	class="flex flex-col gap-5
+	w-full lg:w-auto
+	items-center lg:items-start font-['Figtree']"
+>
 
 	<!-- LinkedIn -->
 	<a
@@ -241,55 +245,37 @@ import { Linkedin, Instagram, Mail, Twitter, X } from "lucide-svelte";
 		rel="noopener noreferrer"
 		class="group flex items-center gap-4"
 	>
-		
-
-		<div>
-			<p class="text-sm uppercase tracking-[0.2em] text-[#D4AF37] mb-1">
-				LinkedIn
-			</p>
-<div class="flex items-center gap-4">
-<Linkedin
+		<Linkedin
 			class="w-5 h-5 text-[#D4AF37]
-			group-hover:text-[#70B5F4] transition flex-shrink-0"
+			group-hover:text-[#70B5F4] transition"
 		/>
-			<h2
-				class="text-lg text-[#F5F1E8]
-				group-hover:text-[#70B5F4]
-				transition"
-			>
-				The Illuminati Quiz Club
-			</h2>
-</div>
-		</div>
+
+		<span
+			class="text-lg text-[#F5F1E8]
+			group-hover:text-[#70B5F4] transition"
+		>
+			The Illuminati Quiz Club
+		</span>
 	</a>
 
 	<!-- Instagram -->
 	<a
-		href="https://www.instagram.com/mec_illuminati?igsh=MW9pZHNycTNxdjhybQ=="
+		href="https://www.instagram.com/mec_illuminati"
 		target="_blank"
 		rel="noopener noreferrer"
 		class="group flex items-center gap-4"
 	>
-		
-
-		<div>
-			<p class="text-sm uppercase tracking-[0.2em] text-[#D4AF37] mb-1">
-				Instagram
-			</p>
-<div class="flex items-center gap-4">
-<Instagram
+		<Instagram
 			class="w-5 h-5 text-[#D4AF37]
-			group-hover:text-[#70B5F4] transition flex-shrink-0"
+			group-hover:text-[#70B5F4] transition"
 		/>
-			<h2
-				class="text-lg text-[#F5F1E8]
-				group-hover:text-[#70B5F4]
-				transition"
-			>
-				@mec_illuminati
-			</h2>
-</div>
-		</div>
+
+		<span
+			class="text-lg text-[#F5F1E8]
+			group-hover:text-[#70B5F4] transition"
+		>
+			@mec_illuminati
+		</span>
 	</a>
 
 	<!-- X -->
@@ -299,35 +285,14 @@ import { Linkedin, Instagram, Mail, Twitter, X } from "lucide-svelte";
 		rel="noopener noreferrer"
 		class="group flex items-center gap-4"
 	>
-		
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[#D4AF37] group-hover:text-[#70B5F4] transition flex-shrink-0" > <path d="M4 4l11.733 16h4.267l-11.733 -16z" /> <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /> </svg>
 
-		<div>
-			<p class="text-sm uppercase tracking-[0.2em] text-[#D4AF37] mb-1">
-				X
-			</p>
-<div class="flex items-center gap-4">
-<svg 
-  xmlns="http://www.w3.org/2000/svg" 
-  viewBox="0 0 24 24" 
-  fill="none" 
-  stroke="currentColor" 
-  stroke-width="2" 
-  stroke-linecap="round" 
-  stroke-linejoin="round" 
-  class="w-5 h-5 text-[#D4AF37] group-hover:text-[#70B5F4] transition flex-shrink-0"
->
-  <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-</svg>
-			<h2
-				class="text-lg text-[#F5F1E8]
-				group-hover:text-[#70B5F4]
-				transition"
-			>
-				@IlluminatiQuiz
-			</h2>
-</div>
-		</div>
+		<span
+			class="text-lg text-[#F5F1E8]
+			group-hover:text-[#70B5F4] transition"
+		>
+			@IlluminatiQuiz
+		</span>
 	</a>
 
 	<!-- Email -->
@@ -335,29 +300,17 @@ import { Linkedin, Instagram, Mail, Twitter, X } from "lucide-svelte";
 		href="mailto:illuminatiquiz@gmail.com"
 		class="group flex items-center gap-4"
 	>
-		
+		<Mail
+			class="w-5 h-5 text-[#D4AF37]
+			group-hover:text-[#70B5F4] transition"
+		/>
 
-		<div>
-			<p class="text-sm uppercase tracking-[0.2em] text-[#D4AF37] mb-1">
-				Email
-			</p>
-<div class="flex items-center gap-4">
-	<Mail
-		class="w-5 h-5 text-[#D4AF37]
-		group-hover:text-[#70B5F4] transition flex-shrink-0"
-	/>
-		
-	<h2
-		class="text-lg text-[#F5F1E8]
-		group-hover:text-[#70B5F4]
-		transition"
-	>
-		illuminatiquiz@gmail.com
-	</h2>
-</div>
-
-
-		</div>
+		<span
+			class="text-lg text-[#F5F1E8]
+			group-hover:text-[#70B5F4] transition"
+		>
+			illuminatiquiz@gmail.com
+		</span>
 	</a>
 
 </div>

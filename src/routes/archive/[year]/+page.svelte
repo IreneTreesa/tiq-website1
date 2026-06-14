@@ -41,7 +41,7 @@ import { Eye, Download } from "lucide-svelte";
 	{data.title}
 </h1>
 
-<div class="space-y-3 text-white/70 text-lg">
+<div class="space-y-3 text-white/70 text-lg font-['Figtree']">
 
 	<p>
 		{data.date}
@@ -88,7 +88,7 @@ import { Eye, Download } from "lucide-svelte";
 
 					<div>
 
-						<h3 class="text-2xl font-[merriweather]">
+						<h3 class="text-2xl font-['Figtree']">
 							{person.name}
 						</h3>
 
@@ -118,7 +118,7 @@ import { Eye, Download } from "lucide-svelte";
 
 					<div>
 
-						<h3 class="text-2xl font-[merriweather]">
+						<h3 class="text-2xl font-['Figtree']">
 							{person.name}
 						</h3>
 
@@ -148,7 +148,7 @@ import { Eye, Download } from "lucide-svelte";
 
 					<div>
 
-						<h3 class="text-2xl font-[merriweather]">
+						<h3 class="text-2xl font-['Figtree']">
 							{person.name}
 						</h3>
 
@@ -192,7 +192,7 @@ import { Eye, Download } from "lucide-svelte";
 
 					<div>
 
-						<h3 class="text-xl lg:text-2xl font-[merriweather] mb-2">
+						<h3 class="text-xl lg:text-2xl font-['Figtree'] mb-2">
 							TIQ {data.year} Report
 						</h3>
 
@@ -241,7 +241,7 @@ import { Eye, Download } from "lucide-svelte";
 
 					<div>
 
-						<h3 class="text-2xl font-[merriweather] mb-2">
+						<h3 class="text-2xl font-['Figtree'] mb-2">
 							Annual Club Report
 						</h3>
 
@@ -324,9 +324,9 @@ import { Eye, Download } from "lucide-svelte";
 				</div>
 
 				<!-- CONTENT -->
-				<div class="p-8 space-y-5">
+				<div class="p-8 space-y-5 font-['Figtree']">
 
-					<div class="flex flex-col gap-2 text-white/50 text-sm">
+					<div class="flex flex-col gap-2 text-white/50 text-sm ">
 
 						<p>
 							{event.date}
@@ -376,7 +376,7 @@ import { Eye, Download } from "lucide-svelte";
 
 		<p
 			class="mt-4 text-white/70
-			max-w-2xl mx-auto"
+			max-w-2xl mx-auto font-['Figtree']"
 		>
 			Explore photographs and memories from
 			TIQ {data.year}.

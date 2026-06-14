@@ -27,7 +27,7 @@ onMount(() => {
 			Archive
 		</h1>
 
-		<p class="max-w-2xl mx-auto text-white/60 leading-relaxed">
+		<p class="max-w-2xl mx-auto text-white/60 leading-relaxed font-['Figtree']">
 			A preserved history of TIQ across the years.
 		</p>
 
@@ -93,7 +93,7 @@ onMount(() => {
 						{item.title}
 					</h2>
 
-					<p class="text-white/60 text-sm">
+					<p class="text-white/60 text-sm font-['Figtree']">
 						{item.date}
 					</p>
 

@@ -76,7 +76,7 @@
 
 		<p
 			class="max-w-2xl mx-auto text-white/60
-			text-sm md:text-base leading-relaxed"
+			text-sm md:text-base leading-relaxed font-['Figtree']"
 		>
 			Moments, memories, victories, and chaos from TIQ across the years.
 		</p>
