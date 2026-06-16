@@ -49,7 +49,7 @@ import { Linkedin, Instagram, Mail, Twitter, X } from "lucide-svelte";
 		</div>
 		<img 
   class="order-1 lg:order-2 w-40 sm:w-52 lg:w-96 mx-auto lg:mx-0 mt-6 lg:mt-0 mb-12 lg:mb-0"
-  src="/media/tiq_lightblue.png" 
+  src="/media/tiq_lightblue.webp" 
   alt="tiqlogo" 
 />
 
@@ -68,7 +68,7 @@ import { Linkedin, Instagram, Mail, Twitter, X } from "lucide-svelte";
            rounded-full
            mx-auto lg:mx-0
            shrink-0"
-    src="/media/sandeep_menon.png"
+    src="/media/sandeep_menon.webp"
     alt="Sandeep Menon"
   />
 
@@ -98,7 +98,7 @@ import { Linkedin, Instagram, Mail, Twitter, X } from "lucide-svelte";
   <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
     
     <div class="flex flex-col sm:flex-row lg:flex-col items-center lg:items-start gap-6 text-center sm:text-left">
-      <img src="/media/college.png" alt="college" class="w-40 sm:w-48 lg:w-72 h-auto" />
+      <img src="/media/college.webp" alt="college" class="w-40 sm:w-48 lg:w-72 h-auto" />
       <h1 class="text-3xl sm:text-4xl lg:text-5xl text-[#70B5F4] font-light font-[merriweather] leading-tight">
         Govt. Model <br class="hidden lg:block"/>Engineering College
       </h1>

@@ -101,12 +101,12 @@
 
 	<div class="hidden lg:block absolute right-0 top-0 h-full w-[45%] pointer-events-none">
 		<img
-			src="/media/pic1 (1).png"
+			src="/media/pic1.webp"
 			alt="TIQ Hero"
 			class="absolute top-0 right-35 h-[55vh] object-cover rounded-b-[3rem]  "
 		/>
 		<img
-			src="/media/2pic2.png"
+			src="/media/pic2.webp"
 			alt="TIQ Crowd"
 			class="absolute bottom-0 right-[60%] h-[42vh] object-cover rounded-t-[3rem] "
 		/>
@@ -123,7 +123,7 @@
 	<!-- Get ready for the Largest Quiz -->
 	
 <div class="flex flex-col-reverse lg:flex-row items-center gap-10 md:ml-20">
-	<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic3.png" alt="Frame49" />
+	<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic3.webp" alt="Frame49" />
 	<div class="flex flex-col lg:w-1/2">
 			<h1 class="text-4xl md:text-5xl lg:text-6xl font-[merriweather] text-[#020913] text-center lg:text-left">
 				Get ready for the Largest Quiz in South India
@@ -144,13 +144,13 @@
 				Cause nothing’s fun without proper incentive. Special thanks to our sponsors, primarily <b class="font-semibold">Ansys</b>
 			</p>
 		</div>
-		<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic4.png" alt="Frame47" />
+		<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic4.webp" alt="Frame47" />
 	</div>
 
 	<!-- Hosted by Section -->
 
 <div class="flex flex-col-reverse lg:flex-row items-center gap-10 md:ml-20">
-	<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic5.png" alt="Frame48" />
+	<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic5.webp" alt="Frame48" />
 	<div class="flex flex-col lg:w-1/2">
 			<h1 class="text-4xl md:text-5xl lg:text-6xl font-[merriweather] text-[#020913] text-center lg:text-left">
 				Hosted by Major Chandrakanth Nair
@@ -269,7 +269,7 @@
 >
 
 	<img
-		src="/media/2025/2.jpg"
+		src="/media/2025/2.webp"
 		alt="TIQ"
 		class="w-full max-w-[340px] h-[300px] object-cover rounded-[2rem] shadow-2xl
 		lg:absolute lg:top-0 lg:right-0 lg:h-[360px]
@@ -292,7 +292,7 @@
   </h1>
 
   <img
-    src="/media/ansys.png"
+    src="/media/ansys.webp"
     alt="ANSYS"
     class="w-48 md:w-64 lg:w-72 object-contain"
   />
@@ -370,7 +370,7 @@
 
 	<!-- IMAGE -->
 	<img
-		src="/media/quizmasters/Major.jpg"
+		src="/media/quizmasters/Major.webp"
 		alt="Major Chandrakanth Nair"
 		class="relative
 		w-40 h-40
@@ -410,7 +410,7 @@
 						/>
 
 						<img
-							src="/media/quizmasters/Sadhasiv.jpg"
+							src="/media/quizmasters/Sadhasiv.webp"
 							alt="Sadhasiv N"
 							class="relative
 							w-32 h-32
@@ -447,7 +447,7 @@
 						/>
 
 						<img
-							src="/media/quizmasters/Suresh.jpg"
+							src="/media/quizmasters/Suresh.webp"
 							alt="Nagadarshan Suresh"
 							class="relative
 							w-32 h-32
@@ -484,7 +484,7 @@
 						/>
 
 						<img
-							src="/media/quizmasters/Udupa.jpg"
+							src="/media/quizmasters/Udupa.webp"
 							alt="Thajaswi Udupa"
 							class="relative
 							w-32 h-32

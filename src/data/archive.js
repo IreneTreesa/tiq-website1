@@ -13,7 +13,7 @@ export const archives = [
 
 		quizmaster: 'Major Chandrakanth Nair',
 
-		poster: '/media/2025/2.jpg',
+		poster: '/media/2025/2.webp',
 
 		winners: {
 			first: [
@@ -64,7 +64,7 @@ export const archives = [
 	{
 		title: 'Monthly Informals',
 
-		image: '/media/other_events/MI25.jpeg',
+		image: '/media/other_events/MI25.webp',
 
 		date: 'Every month',
 
@@ -79,7 +79,7 @@ export const archives = [
 	{
 		title: 'Inceptio Quiz',
 
-		image: '/media/other_events/freshersquiz.jpeg',
+		image: '/media/other_events/freshersquiz.webp',
 
 		date: '16 September 2025',
 
@@ -94,7 +94,7 @@ export const archives = [
 	{
 		title: 'Engineer’s Day Quiz',
 
-		image: '/media/other_events/engineersquiz25.jpg',
+		image: '/media/other_events/engineersquiz25.webp',
 
 		date: '18 September 2025',
 
@@ -109,7 +109,7 @@ export const archives = [
 	{
 		title: 'La Remontada II',
 
-		image: '/media/other_events/footballquiz25.jpg',
+		image: '/media/other_events/footballquiz25.webp',
 
 		date: '3 March 2026',
 

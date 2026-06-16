@@ -27,9 +27,9 @@
 			"/media/2024/3.webp"
 		],
 		2025: [
-			"/media/2025/1.jpg",
-			"/media/2025/4.jpg",
-			"/media/2025/7.jpg"
+			"/media/2025/1.webp",
+			"/media/2025/4.webp",
+			"/media/2025/7.webp"
 		]
 
 	};
