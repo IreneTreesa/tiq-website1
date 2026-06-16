@@ -129,7 +129,7 @@
 				Get ready for the Largest Quiz in South India
 			</h1>
 			<p class="hidden md:block mt-4 text-base md:text-lg font-light text-[#020913]/70 font-['Figtree']">
-				With over 400 participants, including students from IIMs and IITs, attendees come not only for the prize money but also for the convivial quizzing experience.
+				Featuring over 400 participants, including students from IIMs and IITs, the event blends competition with a convivial culture of quizzing.
 			</p>
 		</div>
 	</div>
@@ -141,7 +141,7 @@
 				With a Cash Pool totaling over ₹55,000
 			</h1>
 			<p class="hidden md:block mt-4 text-base md:text-lg font-light text-[#020913]/70 font-['Figtree']">
-				Cause nothing’s fun without proper incentive. Special thanks to our sponsors, primarily <b class="font-semibold">Ansys</b>
+				Made possible through the generous support of our sponsors, with special thanks to <b class="font-semibold">Ansys.</b>
 			</p>
 		</div>
 		<img class="w-full max-w-xs md:max-w-sm lg:max-w-sm" src="/media/pic4.webp" alt="Frame47" />
@@ -156,7 +156,7 @@
 				Hosted by Major Chandrakanth Nair
 			</h1>
 			<p class="hidden md:block mt-4 text-base md:text-lg font-light text-[#020913]/70 font-['Figtree']">
-				One of India’s finest Quiz Masters, Major Chandrakanth Nair is here to give you that premium quizzing experience we know him for!
+				One of India’s finest Quiz Masters, Major Chandrakanth Nair, is here to bring the distinctive style and depth that have made him a favourite among quizzers nationwide.
 			</p>
 			
 		</div>
@@ -305,10 +305,7 @@
 
 	<div class="max-w-7xl mx-auto text-center">
 
-		<!-- SECTION LABEL -->
-		<p class="text-[#D4AF37] uppercase tracking-[0.35em] text-sm mb-4">
-			Legacy of Voices
-		</p>
+		
 
 		<!-- HEADING -->
 		<h2
@@ -553,7 +550,7 @@
 		18 EDITIONS
 	</span>
 </div>
-			One Continuing Legacy.
+			'Through the Years' ??
 		</h2>
 
 		<p class="mt-4 text-base md:text-lg font-['Figtree'] text-[#020913]/70">

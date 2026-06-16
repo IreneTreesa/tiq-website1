@@ -34,17 +34,10 @@ import { Linkedin, Instagram, Mail, Twitter, X } from "lucide-svelte";
     About TIQ
 </h1>
 			<p class="mt-6 text-sm sm:text-base leading-relaxed font-['Figtree'] font-light text-slate-300 pr-0 sm:pr-10">
-				The Illuminati Quiz (TIQ), the annual inter collegiate quiz competition organised by Govt.
-				Model Engineering College is one of the largest student organised Quiz in South India. Held
-				in memory of the late Sandeep Menon. Like the last edition, Illuminati Quiz will also be
-				open to all categories testing the experience and mettle of working professionals against
-				the young blood of quizzing.
+				The Illuminati Quiz (TIQ), organised by the students of Govt. Model Engineering College (MEC), Kochi, is among South India’s leading student-run quiz competitions. Founded in 2008 in memory of Sandeep Menon, TIQ has grown into a nationally recognised platform, bringing together participants from schools, colleges and professional circles.
 			</p>
 			<p class="mt-4 text-sm sm:text-base leading-relaxed font-['Figtree'] font-light text-slate-300 pr-0 sm:pr-10">
-				The new normal paved way for quizeers across the country to be part of this prestigious
-				event. It also garners a large number of participants from elite colleges like IIMs and
-				IITs, and numerous schools across South India and is well known not just for its attractive
-				prize money but also for providing a convivial quizzing experience.
+				Known for its thoughtfully crafted questions and competitive format, TIQ has consistently drawn participants from leading institutions, including the IITs and IIMs. Each edition typically features a rigorous preliminary round followed by fiercely contested finals, providing a stage where experienced contenders and emerging talent can compete side by side.
 			</p>
 		</div>
 		<img 
@@ -114,11 +107,7 @@ import { Linkedin, Instagram, Mail, Twitter, X } from "lucide-svelte";
         in the country.
       </p>
       <p class="border-t border-slate-8xl pt-6 border-[#70B5F4]/20 ">
-        Illuminati, the quizzing fraternity of Govt. Model Engineering College, Kochi,
-        is among the most active student societies in the campus. Founded by the late
-        Sandeep Menon, it has conducted over a hundred intra- and inter-collegiate
-        quizzes and organises the weekly TGIX quiz, bringing together avid quizzers
-        to compete in a true battle of wits.
+        Illuminati, the resident quizzing fraternity of Govt. Model Engineering College (MEC), Kochi, was founded by the late Sandeep Menon to foster a lasting interest in quizzing on campus and beyond. Over the years, the club has conducted more than a hundred intra- and inter-collegiate quizzes, hosting monthly informal quizzes and organising The Illuminati Quiz (TIQ), its flagship annual event that draws participation from across the country.
       </p>
     </div>
 
