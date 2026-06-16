@@ -11,7 +11,7 @@ export const teams = {
 			{
 				name: 'M B Sruthi',
 				role: 'Vice Chair',
-				image: '/media/team/Sruthi.webp',
+				image: '/media/team/Sruthi1.jpg',
 				linkedin: 'https://www.linkedin.com/in/sruthi-m-b-a78875280?utm_source=share_via&utm_content=profile&utm_medium=member_android'
 			},
 			{

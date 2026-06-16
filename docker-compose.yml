@@ -4,6 +4,13 @@ services:
   tiq-web:
     build: .
     container_name: tiq-web
-    ports:
-      - "3000:3000"
     restart: unless-stopped
+    environment: 
+      - VIRTUAL_HOST=illuminati.mec.ac.in
+      - VIRTUAL_PORT=3000
+    
+    networks:
+      default:
+        external:
+          name: mec
+          
