@@ -550,7 +550,7 @@
 		18 EDITIONS
 	</span>
 </div>
-			'Through the Years' ??
+			Through the Years
 		</h2>
 
 		<p class="mt-4 text-base md:text-lg font-['Figtree'] text-[#020913]/70">

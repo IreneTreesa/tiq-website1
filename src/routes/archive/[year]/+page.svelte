@@ -260,7 +260,7 @@ import { Eye, Download } from "lucide-svelte";
 	</a>
 
 	<a
-		href={data.reports.main}
+		href={data.reports.annual}
 		download
 		aria-label="Download Report"
 		class="text-[#D4AF37] hover:scale-110 transition"
