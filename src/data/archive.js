@@ -98,7 +98,7 @@ export const archives = [
 
 		date: '18 September 2025',
 
-		venue: '',
+		venue: 'Internal Auditorium',
 
 		description:
 			'The club organized the Engineer’s Day Quiz in collaboration with the ASME College Chapter to commemorate Engineer’s Day and celebrate the contributions of engineers to society and technological progress.',

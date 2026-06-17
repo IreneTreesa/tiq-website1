@@ -574,7 +574,7 @@
 		
 		<div class="mt-10 flex justify-center"> 
 			
-			<a href="/archive/2025" class="inline-flex items-center 
+			<a href="/archive" class="inline-flex items-center 
 			justify-center px-6 py-3 
 			bg-[#020913]/10
 			border border-[#020913] text-[#020913] rounded-full 
